@@ -1,0 +1,168 @@
+/* Global */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+/* barra de navegação */
+.nav ul img {
+    padding: 30px 0px 0px 0px;
+    margin: 0px;
+
+}
+
+.nav ul {
+    margin: 0;
+    text-decoration: none;
+    padding: 0px;
+    float: right;
+}
+#icone {
+    height: 60px;
+}
+
+#icone:hover {
+    height: 62px;
+}
+#logo {
+    height: 140px;
+}
+
+#logo:hover {
+    height: 145px;
+}
+
+.nav img {
+    padding: 0px;
+    margin: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    padding: 0px 5px 5px 20px;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 20px;
+    padding: 10px 20px 20px 20px;
+    transition: 0.5s;
+}
+.nav li span{
+    color:rgb(255, 158, 158);
+}
+
+.nav li a:hover {
+    color:rgb(255, 158, 158);
+}
+
+
+
+/* container (limitação do conteudo dentro da pag) */
+.container {
+    width: 90%;
+    margin: auto;
+}
+.container h1{
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 158, 158);
+    text-align: center;
+}
+.container h3{
+    text-align: center;
+    color: rgb(255, 200, 200);
+
+}
+/* Header */
+
+.header {
+    background: linear-gradient(45deg, #ffdcdc, #521111, #ff9797, #862020, #ffb7b7); /* cor de fundo gradiente */
+    height: 140px;
+    border-bottom: rgb(0, 0, 0) solid 5px;
+}
+
+.borda {
+    border-bottom: rgb(148, 98, 98) solid 3px;
+}
+.borda_dois {
+    border-bottom: rgb(0, 0, 0) solid 5px;
+}
+
+.fundo {
+    /* background-image: url('../IMG/Snoop-Dogg-Wiz-Khalifa.jpg'); */
+    background-color: #000000;
+    background: linear-gradient(45deg, #200101, #000000, #3b0404, #000000, #410909); /* cor de fundo gradiente */
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+
+#gif {
+    border-color: black;
+    background-color: white;
+    border-width: 5px;
+    border-radius: 50%;
+    height: 200px;
+    margin: 40px;
+    transition: 0.4s;
+    border-style: solid;
+    text-decoration: none;
+}
+
+#gif_not {
+    border-color: black;
+    height: 200px;
+    width: 200px;
+    border-width: 5px;
+    border-radius: 50%;
+    margin: 40px;
+    transition: 0.4s;
+    border-style: solid;
+    background-color: white;
+    text-decoration: none;
+
+}
+
+#gif:hover, #gif_not:hover, #img_his:hover {
+    border-style: dashed;
+}
+
+#img_his {
+    border-color: black;
+    height: 200px;
+    width: 200px;
+    border-width: 5px;
+    border-radius: 50%;
+    margin: 40px;
+    transition: 0.4s;
+    border-style: solid;
+    background-color: white;
+    text-decoration: none;
+
+}
+
+.box_escolha {
+    display: inline-block;
+    background-color: rgba(255, 229, 229, 0.561);
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+    width: 17%;
+    text-align: center;
+    font-size: 24px;
+    margin: 5px;
+}
+.box_escolha b{
+    text-align: center;
+    border-width: 3px;
+    color: rgb(219, 219, 219);
+    border-color: rgb(255, 255, 255);
+    border-style: groove;
+    background-color: rgb(73, 12, 12);
+}
+

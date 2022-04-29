@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/rappeer.png">   <!-- imagem linkada da parte de "guia" -->
+    <link rel="stylesheet" href="CSS/login.css">
+
+    <title>RAP Area</title>
+</head>
+<body>
+
+<div class="header">
+<div class="container" >
+<div class="nav" >
+    <a href="index.html"><img src="IMG/rappeer.png" id="logo" alt="Logo fundo preto"></a>
+
+<ul>
+    <li><a href="meu_cadastro.html">RAP AREA</a></li>
+   
+    <a href="login.html"><img id="icone" src="IMG/rap.png" alt="icone login"></a>
+
+</ul>
+</div>
+
+</div>
+
+</div>
+<div class="borda"></div>
+<div class="borda_dois"></div>
+<div class="fundo"><br><br><br>
+    
+    <center><form id="form_login" method="post" onsubmit="return entrar()">
+    <div id="login_id" class="login_div"  >
+    <h1>RAP AREA - <b id="pre" >Premium</b></h1><br>
+    <h1 id="log" >Login</h1><br>
+    <b> Insira seu E-mail cadastrado: </b><br>
+    <input name="login" id="email_v" onkeyup="analisar_login()"required type="text" placeholder="Insira o seu E-mail." ><div id="valida_email"></div><br><br>
+    <b>Insira sua senha: </b><br>
+    <input name="senha" id="senha_v" onkeyup="analisar_senha()"required type="password"placeholder="Insira sua senha."><div id="valida_senha"></div><br>
+<br>
+    <button id="btn_entrar" onclick="logar()"><b  id="text_button">Entrar</b></button><br><br>
+    <span id="assine" >
+        Ainda não é assinante ?,<a href="meu_cadastro.html"> clique aqui </a>e comece seu teste grátis de 30 dias </span>
+    </form>
+    <div class="extra">
+        <div id="div_erro" class="msg_erro">
+        </div>
+
+        <img src="img/gif_music.gif" id="img_aguarde"  >
+        
+    </div></center>
+</div>
+</div>
+</body>
+</html>
+<script>
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'menu_conteudo.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.visibility = 'visible';
+        div_erro.style.visibility = 'hidden';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        img_aguarde.style.visibility = 'hidden';
+        div_erro.style.visibility = 'visible';
+        div_erro.innerHTML = resposta;
+    }
+
+    function analisar_login() {
+        var v_e = email_v.value;
+        if(v_e.indexOf('@' && '.') != -1 && v_e.length > 0 && v_e.length < 70){
+            valida_email.innerHTML = `&#9989;`;
+
+            } else{
+            valida_email.innerHTML = `&#9940;`;
+            
+        }
+    }
+
+    function analisar_senha() {
+        var v_s = senha_v.value;
+        if (v_s.length <= 3){
+            valida_senha.innerHTML = `&#9940;`;
+
+            } else{
+            valida_senha.innerHTML = `&#9989;`;
+            
+        }
+    }
+</script>

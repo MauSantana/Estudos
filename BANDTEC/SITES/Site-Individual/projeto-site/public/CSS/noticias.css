@@ -1,0 +1,260 @@
+/* Global */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+/* barra de navegação */
+.nav ul img {
+    padding: 30px 0px 0px 0px;
+    margin: 0px;
+
+}
+
+.nav ul {
+    margin: 0;
+    text-decoration: none;
+    padding: 0px;
+    float: right;
+}
+#icone {
+    height: 60px;
+}
+
+#icone:hover {
+    height: 62px;
+}
+#logo {
+    height: 140px;
+}
+
+#logo:hover {
+    height: 145px;
+}
+
+.nav img {
+    padding: 0px;
+    margin: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    padding: 0px 5px 5px 20px;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 20px;
+    padding: 10px 20px 20px 20px;
+    transition: 0.5s;
+}
+.nav li span{
+    color:rgb(255, 158, 158);
+}
+
+.nav li a:hover {
+    color:rgb(255, 158, 158);
+}
+
+
+
+/* container (limitação do conteudo dentro da pag) */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Header */
+
+.header {
+    background: linear-gradient(45deg, #ffdcdc, #521111, #ff9797, #862020, #ffb7b7); /* cor de fundo gradiente */
+    height: 140px;
+    border-bottom: rgb(0, 0, 0) solid 5px;
+}
+
+.borda {
+    border-bottom: rgb(148, 98, 98) solid 3px;
+}
+.borda_dois {
+    border-bottom: rgb(0, 0, 0) solid 5px;
+}
+
+.fundo {
+    background-image: url(../IMG/jornal_back.jpg);
+    height: 2800px;
+}
+.fundo_dois {
+    background-color: rgba(255, 222, 222, 0.828);
+    height: 2600px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color:rgb(122, 42, 42) ;
+}
+#titulo {
+    background-color: white;
+    border-radius: 20px;
+    border-style: solid;
+    border-color:rgb(122, 42, 42) ;
+    width:40%;
+    height: 45px;
+    padding: 0;
+    margin:0;
+    color: rgb(66, 24, 24);
+}
+.cards {
+    margin: 20px 50px 100px 100px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 12px rgb(70, 69, 69);
+    width: 385px;
+}
+.cards:hover{
+    background-color: #e2e2e2; 
+}
+
+/* IMAGEM 1 NOTICIA DJONGA */
+.img_card {
+    background-image: url('../IMG/djonga_noticia.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+.img_card_dois {
+    background-image: url('../IMG/dr_dree.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+.img_card_dois {
+    background-image: url('../IMG/dr_dree.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+.img_card_tres {
+    background-image: url('../IMG/flores.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+.img_card_quatro {
+    background-image: url('../IMG/nicki.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+.img_card_cinco {
+    background-image: url('../IMG/jovem-dex-kayblack.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+.img_card_seis{
+    background-image: url('../IMG/Batalha-de-Rap.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+.img_card_sete {
+    background-image: url('../NOTICIAS/IMG/bk_djonga_divulgacao_widelg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+.img_card_oito {
+    background-image: url('../NOTICIAS/IMG/trump.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+.img_card_nove {
+    background-image: url('../NOTICIAS/IMG/sidoka.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+.img_card_dez {
+    background-image: url('../NOTICIAS/IMG/diss.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+.img_card_onze {
+    background-image: url('../NOTICIAS/IMG/venenosa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+.img_card_doze {
+    background-image: url('../NOTICIAS/IMG/loja-matue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+.topo_card {
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.resumo_card {
+    color: rgb(117, 117, 117);
+}
+
+.conteudo{
+    padding: 20px;
+}
+
+#button_card {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    background: rgb(122, 42, 42);
+    border-style: solid;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+#button_card:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(122, 42, 42);
+    border-color: rgb(122, 42, 42);
+    
+}
+
+.h1_card{
+    text-align: center;
+    margin: 0;
+    padding: 80px; 
+}
+
+#but_sair {
+    float: left;
+    height: 30px;
+    width: 100px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: #fdacac;
+    font-size: 18px;
+}
+#but_sair:hover {
+    background-color: #ff6f6f;
+
+}
