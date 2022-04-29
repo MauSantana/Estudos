@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <h3>O que faz um triatleta?</h3>
+    <button onclick="nada()">Nada</button>
+    <button onclick="corre()">Corre</button>
+    <button onclick="pedala()">Pedala</button><br><br>
+
+    <img id="um" src="nadando.jpg" alt="" width="400px" style="display: none;"  >
+    <img id="dois" src="correndo.jpg" alt="" width="400px" style="display: none;">
+    <img id="tres" src="pedalando.jpg" alt="" width="400px" style="display: none;">
+
+</body>
+</html>
+<script>
+function nada() {
+ um.style = "display:block"
+ dois.style = "display: none;"
+ tres.style = "display: none;"
+}
+function corre() {
+    dois.style = "display:block"
+    um.style = "display: none;"
+    tres.style = "display: none;"
+}
+function pedala() {
+    tres.style = "display:block"
+    dois.style = "display: none;"
+    um.style = "display: none;"
+}
+
+</script>

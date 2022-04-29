@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="mais_ama" placeholder=" pessoa que tu mais ama na vida?"> <br>
+    <input type="number" id="quantidade" placeholder=" quanto tu a ama?"> <br>
+    <button onclick="Expressar()">Expressar amor</button> <br>
+    <div id="div_meloso"></div>
+</body>
+</html>
+<script>
+ /* 4. Crie um programa em HTML/JS o qual:
+ a) Pergunte o nome da pessoa que o usuário mais ama na vida
+ b) Pergunte o quanto o usuário a ama (um número inteiro)
+ c) Ao clicar num botão "Expressar amor", devem aparacer, abaixo dele, N vezes (conforme o valor em b)) a frase indicada em a), como neste   exemplo (considerando o nome "Lady Gaga" e que ama "3")
+   Lady Gaga, eu te amo! Sempre lembre disso!
+   Lady Gaga, eu te amo! Sempre lembre disso!
+   Lady Gaga, eu te amo! Sempre lembre disso!*/
+
+
+  function Expressar(){
+    
+     div_meloso.inneHTML = '';
+    
+     var saber = Number(quantidade.value);
+
+     var contador = 0;
+
+     while(contador < saber){
+        div_meloso.inneHTML += `${mais_ama.value} eu te amo! Sempre lembre disso! <br>`;
+        contador++;
+     }
+ }
+
+</script>

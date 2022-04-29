@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <!-- Crie um programa em HTML/JS o qual:
+a) Tenha um botão "Amo o escudo do meu time!"
+b) Ao clicar nele, mostre na própria página 7 vezes o mesmo escudo de um time de
+futebol (ou de LoL ou do esporte que quiser) -->
+<button onclick="analisar()" >Amo o escudo do meu time!</button>
+<div id="msg"></div>
+</body>
+</html>
+<script>
+    function analisar() {
+        var contador = 0
+        msg.innerHTML = ""
+        while (contador <= 7){
+        msg.innerHTML += `<img id="imagem" src="IMG/Corinthians_simbolo.png" alt="" style="height: 200px;">`
+        contador ++;
+    }
+    }
+</script>

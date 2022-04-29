@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <!-- 2. Refaça o programa anterior de tal forma que, antes de cada frase apareça um
+    contador. Ex:
+    1. Boa tarde
+    2. Boa tarde
+    ...
+    7. Boa tarde  -->
+<button onclick="analisar()" >Diga algo sobre a quarentena</button>
+<div id="msg" ></div>
+</body>
+</html>
+<script>
+    function analisar() {
+    var contador = 1
+    msg.innerHTML = '';
+    while (contador <=7){
+    msg.innerHTML += `${contador} Odeio a quarentena<br>`;
+    contador++;
+}
+}
+</script>

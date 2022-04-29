@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        nome da empresa: <input type="text" id="nome_empresa" autofocus> <br>
+        valor da bolsa: <input type="number" id="valor_bolsa"> <br>
+        valor VR: <input type="number" id="valor_VR"><br>
+        tempo de descolamento da empresa para a Bandtec: <input type="number" id="tempo_deslocamnto"><br>
+        <button onclick="calcualar_empresa()">é preferida?</button>
+            <div id="div_empresa"></div>
+    </center>
+</body>
+</html>
+<script>
+    function calcualar_empresa(){
+        var salario = Number(valor_bolsa.value);
+        var VR = Number(valor_VR.value);
+        var deslocamento = Number(tempo_deslocamnto.value);
+
+        div_empresa.innerHTML = ``;
+
+        if(salario >=1800 || VR >= 20 || deslocamento <= 30){
+            div_empresa.innerHTML = `A empresa ${nome_empresa.value} é uma de suas preferências`;
+        }else{
+            div_empresa.innerHTML = `A empresa ${nome_empresa.value} está fora da sua lista`;
+        }
+    }
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="nome1" placeholder="nome do time"><br>
+    <input type="number" id="vitoria1" placeholder="vitorias"><br>
+    <input type="number" id="derrota1" placeholder="derrotas"><br>
+    <input type="number" id="empate1" placeholder="empates"><br>
+    <br>
+    <input type="text" id="nome2" placeholder="nome do time"><br>
+    <input type="number" id="vitoria2" placeholder="vitorias"><br>
+    <input type="number" id="derrota2" placeholder="derrotas"><br>
+    <input type="number" id="empate2" placeholder="empates"><br>
+    <button onclick="comaparar()">Comparar campanhas</button> <br>
+    <div id="div_result"></div>
+    
+</body>
+
+</html>
+<script>
+    function comaparar() {
+
+        let time1 = {
+            nome: nome1.value,
+            vitoria : Number(vitoria1.value),
+            derrota: Number(derrota1.value),
+            empate: Number(empate1.value)
+        };
+        let time2 = {
+            nome : nome2.value,
+            vitoria : Number(vitoria2.value),
+            derrota: Number(derrota2.value),
+            empate: Number(empate2.value)
+        };
+
+        div_result.innerHTML = `
+        o time <b>${time1.nome}</b> teve <u>${(time1.vitoria * 3 + time1.empate * 1)}</u> e <br>
+        time <b>${time2.nome}</b> teve <u>${time2.vitoria * 3 + time2.empate * 1}</u> pontos `;
+    }
+</script>

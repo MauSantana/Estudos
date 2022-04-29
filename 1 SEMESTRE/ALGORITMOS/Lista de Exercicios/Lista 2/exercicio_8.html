@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <h3>Personalidades</h3>
+
+    <button onclick="timido()">Gente tímida</button>
+    <button onclick="causa()">Gente que causa</button>
+    <br><br>
+    <img id="tim" src="chris.jpg" style="display: none;">
+    <img id="cau" src="caruso.jpg" style="display: block;">
+
+
+</body>
+</html>
+<script>
+    function timido () {
+        cau.style = "display: none";
+        tim.style = "display: block";
+    }
+    function causa() {
+        tim.style = "display: none"; 
+        cau.style = "display: block";
+    }
+
+</script>

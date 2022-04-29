@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        voce ja clicou <b id="b_muda">0</b>vezes <br>
+        <button onclick="contar()">Clique cabalistico</button>
+    </center>
+</body>
+</html>
+<script>
+    var vezes = 0;
+    function contar(){
+        vezes++;
+
+        b_muda.innerHTML = vezes;
+
+        if(vezes == 3 || vezes == 4 || vezes == 7 || vezes == 10){
+            alert('voce clicou ${vezes} e Jiliana gosta desse numero');
+        }
+    }
+</script>

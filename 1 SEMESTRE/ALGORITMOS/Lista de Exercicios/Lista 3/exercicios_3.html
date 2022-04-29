@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceiro</title>
+</head>
+<body>
+    <p>Cidade Natal</p>
+    <Input id="cidade_natal" type="text">
+    <br><br>  
+    <Input id="ano_de_nascimento" type="date">
+        <br><br>
+    <button onclick="mostrar()"> Cadastrar</button>
+    <div id='div_mens'></div>
+    
+</body>
+</html>
+<script>
+function mostrar() {
+    div_mens.innerHTML = (`Você nasceu na cidade de : <b>${cidade_natal.value}</b> em <u>${ano_de_nascimento.value}</u>`);
+
+}</script>
+</body>
+</html>

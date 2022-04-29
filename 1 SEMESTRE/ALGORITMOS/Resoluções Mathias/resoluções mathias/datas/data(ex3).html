@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 3. Crie um programa em HTML/JS o qual:
+a) Solicite ao usuário sua idade atual
+b) Ao clicar em "Simular aposentadoria",
+ exibir na página quantos anos faltam para ele se aposentar de acordo com seu sexo biológico,
+  como neste exemplo:
+    Se for homem, faltam X anos para se aposentar. Poderá de aposentar em X/X/YYYY
+    Se for mulher, faltam Y anos para se aposentar. Poderá de aposentar em Y/Y/YYYY
+
+Para calcular X e Y considere que um homem se aposenta com 65 anos e uma mulher com 60.
+Para exibir as datas, considere a data de hoje mais X ou Y anos.
+ Para obter somente o dia de uma data, use a função .getDate().
+  Para obter somente o mês,
+   .getMonth() (0 é janeiro, 1 é fevereiro e assim por diante). Para obter somente o ano, .getYear().
+Não se preocupe se os dia e mês ficarem só com 2 dígito (ex: 1/9/2088) -->
+
+    <input type="text" id="idade_user" placeholder="ponha sua idade aqui"><br>
+    <button onclick="aposentadoria()">Simular aposentadoria</button>
+    <div id="div_result"></div>
+</body>
+
+</html>
+<script>
+    function aposentadoria() {
+        let idade = Number(idade_user.value);
+        let transf = new Date().getFullYear();
+        let ano_homen = (transf - idade) + 65;
+        let ano_mulher = (transf - idade) + 60;
+        let dia = new Date().getDate();
+        let mes = (new Date().getMonth()) + 1;
+
+        div_result.innerHTML = `Se for homem, faltam ${65 - idade} anos para se aposentar.
+         Poderá de aposentar em ${dia}/${mes}/${ano_homen}.
+         <br>
+         Se for mulher, faltam ${60 - idade} anos para se aposentar.
+          Poderá de aposentar em ${dia}/${mes}/${ano_mulher}`;
+    }
+</script>

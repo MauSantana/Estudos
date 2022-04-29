@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista IF-ELSE- q13</title>
+</head>
+<body>
+
+    <input placeholder="Qual a temperatura?" id="temperatura"> <br>
+ 
+    <button onclick="analisar_temperatura()">
+        Analisar Temperatura
+    </button>    
+   
+    <div id="div_resultado"></div>
+
+
+</body>
+</html>
+<script>
+    function analisar_temperatura() {
+
+        var valor_temperatura = Number(temperatura.value);
+
+        div_resultado.innerHTML = 'Temperatura confortável!';
+
+        if (valor_temperatura < 22) {
+            div_resultado.innerHTML = 'Temperatura desconfortável - está frio!';
+        }
+
+        if (valor_temperatura > 23) {
+            div_resultado.innerHTML = 'Temperatura desconfortável - está calor!';
+        }
+  
+    }
+</script>

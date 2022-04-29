@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <h3>Aluno fora de série</h3>
+    1° Nota:<input id="um" type="number" placeholder="Insira sua primeira nota"  ><br>
+    2° Nota:<input id="dois" type="number" placeholder="Insira sua segunda nota"  ><br>
+    3° Nota:<input id="tres" type="number" placeholder="Insira sua terceira nota"  ><br><br>
+
+    <button onclick="calcular()" >Analisar desempenho</button><br><br>
+    <div id="msg" ></div>
+</body>
+</html>
+<script>
+    function calcular () {
+    var media = (Number (um.value) + Number(dois.value) + Number(tres.value)) / 3;
+    msg.innerHTML = `<b>Sua média foi de ${media}</b> <br><br>`
+    if (media >9.4) {
+    msg.innerHTML +=`<b>Parabéns, você é fora de série!</b>`
+    }
+}
+</script>

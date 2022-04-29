@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 2</title>
+</head>
+<body>
+    Entre com a nota do aluno: <br>
+    <input id="nota" type="text" placeholder="Insira sua nota" ><br><br>
+    <button onclick="calcular()"> Classificar aluno</button><br>
+    <div id="msg" ></div>
+    
+</body>
+</html>
+<script>
+    function calcular () {
+
+        if (nota.value <5) {
+            
+        msg.innerHTML = `<span style ="color:red;"> Aluno precisa de muita ajuda </span>`
+
+        } else if(nota.value >= 5 && nota.value <= 7 ){
+            
+        msg.innerHTML = `<span style ="color:orange;"> Aluno na média </span>`
+
+
+            }else if(nota.value > 7 && nota.value <=9.5){
+
+            msg.innerHTML = `<span style ="color:green;"> Aluno na acima da média </span>`
+
+                }else {
+            
+            msg.innerHTML = `<span style ="color:blue;"> Aluno fora da curva </span>`
+
+            }
+    
+    }
+
+
+</script>

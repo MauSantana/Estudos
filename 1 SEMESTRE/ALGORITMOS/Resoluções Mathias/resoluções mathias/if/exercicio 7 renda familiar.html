@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRESTAÇÃO VS FAMILIA</title>
+</head>
+<body>
+    renda familiar <input type="number" id="rendaF"><br>
+    valor da prestação <input type="number" id="prestacao"><br>
+    <button onclick="checar()">Verificar financiamento</button><br>
+    <div id="div_mensagem"></div>
+    
+</body>
+</html> 
+<script>
+    function checar(){
+        
+
+        div_mensagem.innerHTML = `a prestação corresponde à ${(Number(prestacao.value) / Number(rendaF.value)) * 100} % da renda familiar`; 
+
+        if(saber_resultado < 30)
+        {div_mensagem.innerHTML += `<b style="color: red;">Será necessário complementar a renda familiar</b>`};
+    }
+    //var saber_resultado = (Number(prestacao.value) / Number(rendaF.value)) * 100;
+</script>

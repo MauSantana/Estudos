@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova ac3</title>
+</head>
+
+<body>
+
+
+    <input type="text" id="nome1" placeholder="nome artista"><br>
+    <input type="text" id="musica1" placeholder="musica"><br>
+    <input type="text" id="data1" placeholder="data de lançamento mm/dd/aaa"> <br>
+
+    <br>
+    <input type="text" id="nome2" placeholder="nome artista"><br>
+    <input type="text" id="musica2" placeholder="musica"><br>
+    <input type="text" id="data2" placeholder="data de lançamento mm/dd/aaa"> <br>
+
+    <button onclick="cadastro()">cadastrar</button><br>
+    <button onclick="soma_50_para1()" id="btn1" style="display: none;">artista 1 + 50 views</button><br>
+    <button onclick="soma_50_para2()" id="btn2" style="display: none;">artista 2 + 50 views</button> <br>
+
+    <div id="div_result1"></div>
+    <div id="div_result2"></div>
+
+    <!-- e) Considere que o usuário sempre vai digitar uma data passada nos campos de data de lançamento da música. Não precisa tratar a situação de data de hoje ou futura.
+
+f) O cálculo de média de views/dia é simples: Número de views / (Dias entre a data de lançamento e hoje)  -->
+</body>
+
+</html>
+<script>
+
+    let artista1 = {
+        nome: 0,
+        musica: 0,
+        data: 0
+    }
+
+    let artista2 = {
+        nome: 0,
+        musica: 0,
+        data: 0
+    }
+
+
+    function cadastro() {
+
+        artista1.nome = nome1.value;
+        artista1.musica = musica1.value;
+
+
+        artista2.nome = nome2.value;
+        artista2.musica = musica2.value;
+
+
+
+        document.getElementById("btn1").style.display = 'block';
+        document.getElementById("btn2").style.display = 'block';
+
+
+    }
+
+    let contador = 0;
+    function soma_50_para1() {
+        let pegando_data = data1.value;
+        let fazendo_new = new Date(pegando_data);
+        let data_hj = new Date;
+        let subtraindo = Number((fazendo_new - data_hj) / 1000 / 60 / 60 / 24);
+        contador += 50
+
+        div_result1.innerHTML = `Vizualizações para a musica <b>${artista1.musica}</b> de <b> ${artista1.nome}</b>: <u>${contador}</u>(media de <b> ${Math.abs((contador / subtraindo).toFixed(1))} </b> views/dia)`;
+
+    }
+
+
+    function soma_50_para2() {
+        let pegando_data2 = data2.value;
+        let fazendo_new = new Date(pegando_data2);
+        let data_hj = new Date;
+        let subtraindo = Number((fazendo_new - data_hj) / 1000 / 60 / 60 / 24);
+        contador += 50
+
+        div_result2.innerHTML = `Vizualizações para a musica <b>${artista2.musica}</b> de <b> ${artista2.nome}</b>: <u>${contador}</u>(media de <b> ${Math.abs((contador / subtraindo).toFixed(1))} </b> views/dia)`;
+
+    }
+</script>

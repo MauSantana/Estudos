@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="frase_user" onkeyup="validanado()" placeholder="frase aka">
+    <br>
+    <div id="div_mostrando"></div>
+</body>
+
+</html>
+<script>
+    function validanado() {
+        div_mostrando.innerHTML = ``;
+
+        var frase = frase_user.value;
+
+        for (var contador = 0; contador < frase.length; ++contador) {
+            div_mostrando.innerHTML += `${frase[contador]}<br>`
+        }
+    }
+</script>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <!-- 
+6 (desafio). Crie um programa em HTML/JS o qual:
+OBS: Use, necessariamente pelo menos um "ou" (||)
+
+a) Pergunte numa combo o tipo de arroz usado (integral ou branco)
+
+b) Pergunte o tempo de cozimento, em minutos
+
+c) Pergunte a quantidade de sal usada, em gramas
+
+d) Ao clicar em "Avaliar arroz", exiba, abaixo dele...
+
+    A frase "Arroz perfeito", caso:
+      Em caso de arroz branco, 10 minutos e até 10g de sal
+      Em caso de arroz integral, 20 minutos e até 15g de sal
+   A frase "Seu arroz não está perfeito", caso nenhum dos critérios anteriores tenha sido alcançado
+e) No caso de arroz perfeito, exiba também a imagem de um belo arroz, branco ou integral,
+ conforme o tipo selecionado. Caso contrário, exiba a cara do Jacquin bravo (aquele famoso meme),
+  independe do tipo de arroz. -->
+   <h3>Tinder</h3>
+<select name="" id="arroz">
+<option value="1">-- Selecione --</option>
+<option value="2">integral</option>
+<option value="3">branco</option>
+</select><br><br>
+Tempo (min):<input id="tempo" type="number" placeholder="Insira o tempo de cozimento..." ><br><br>
+Sal (gramas):<input id="sal" type="number" placeholder="Insira a qtd de sal ..." ><br><br>
+
+<button onclick="calcular()" >Avaliar arroz</button><br><br>
+<div id="msg" ></div>
+<img id="branco" src="IMG/arroz_branco.jpg" alt="" style="display: none;" height="200px" >
+<img id="int" src="IMG/arroz_int.png" alt="" style="display: none;" height="200px">
+<img id="bravo" src="IMG/jacquin.jpg" alt="" style="display: none;" height="200px">
+
+
+</body>
+</html>
+<script>
+    function calcular() {
+        if (arroz.value == 3 && tempo.value == 10 && sal.value <= 10){    
+        branco.style = "display: block;"
+        bravo.style = "display: none;"
+        int.style = "display: none;"
+        msg.innerHTML = `Arroz perfeito`
+        
+        } else if (arroz.value == 2 && tempo.value == 20 && sal.value <= 15 ){    
+        int.style = "display: block;"
+        bravo.style = "display: none;"
+        branco.style = "display: none;"
+        msg.innerHTML = `Arroz perfeito`
+        }
+
+        else {
+        msg.innerHTML = `Seu Arroz não está perfeito`    
+        bravo.style = "display: block;"
+        branco.style = "display: none;"
+        int.style = "display: none;"
+
+    }
+    }
+</script>

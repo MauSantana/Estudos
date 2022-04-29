@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <!-- . Tente fazer uma pequena simulação do famoso jogo "jo ken po" (pedra, papel e tesoura)
+         em HTML/JS:
+
+a) Ao clicar no botão "Jogar", deve aparecer abaixo dele ou a figura de uma pedra,
+ ou de uma folha de papel ou de uma tesoura (seja qual for a imagem, ela deve ter 200px de altura). -->
+</body>
+<h3>jo ken po</h3>
+
+<button onclick="jogar()" >Jogar</button><br>
+<img id="imagem" src="" alt="" style="height: 200px;">
+
+</html>
+<script>
+    function jogar() {
+        var num = parseInt(Math.random() * 3)
+        if (num == 1) {
+            imagem.src = 'IMG/pedra.png'
+            
+        } else if (num == 2){
+            imagem.src = 'IMG/papel.jpg'   
+        }else {
+            imagem.src = 'IMG/tesoura.jpg'    
+
+        }
+    }
+
+</script>

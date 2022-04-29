@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 3 exercicio 20</title>
+</head>
+<body>
+    <input type="text"  id="nome" placeholder="tu nombre aka">
+    <select id="manifesto">
+        <option value="">==escolha uma==</option>
+        <option value="valorize mais os <u>processos e ferramentas</u> do que individuos e interações">processos e ferramentas</option>
+        <option value="valorize mais a <u>documentação abrangente</u> do que Software em funcionamento">documentação abrangente</option>
+        <option value="valorize mais a <u>negociação de contratos</u> do que Colaboração com o cliente ">negociação de contratos</option>
+        <option value="valorize mais <u>seguir um plano</u> do que Responder a mudanças">seguir um plano</option>
+    </select>
+    <button onclick="agilidade()">#partiuagilidade</button>
+    <div id="div_algo"></div>
+</body>
+</html>
+<script>
+function agilidade(){
+    div_algo.innerHTML = `Entao, ${nome.value}, ${manifesto.value}`;
+}
+</script>

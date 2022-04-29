@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarto</title>
+</head>
+<body>
+    <h3>Calculo da Média</h3>
+    1° Nota <input id="nota1" type="text"> <br>
+    2° Nota <input id="nota2" type="text"> <br><br>
+    <button onclick="calcular()">Calculo da Média</button>
+    <br.<br>
+    <div id="div_mens"></div>
+
+</body>
+</html>
+<script>
+    function calcular() {
+
+        var media = (Number (nota1.value) + Number(nota2.value)) / 2;
+        div_mens.innerHTML = `Sua média foi de ${media}`;
+         
+    }
+</script>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<!-- . Crie um programa em HTML/JS que simule um cofrinho da seguinte forma:
+a) Tenha, logo de cara, a frase "Valor guardado no cofrinho: R$0.00"
+b) Solicite o valor a ser depositado
+c) Ao clicar num botão "Depositar", o valor informado em b) é adicionado ao valor exibido na frase descrita em a)
+d) Ao clicar num botão "Tirar toda a grana", o valor exibido em a) volta a 0.00 -->
+
+<body>
+    <h3>Cofrinho</h3>
+    Valor guardado no cofrinho: <div id="msg">R$0.00</div>  <br> <br>
+    <input id="dep" type="number" placeholder="Insira o valor a ser depositado " >
+    <button onclick="depositar()" >Depositar</button>
+    <button onclick="tudo()" >Tirar toda a grana</button>
+
+</body>
+</html>
+<script>
+    var deposito = 0.00
+function depositar() {
+    msg.innerHTML = `R$${dep.value}`
+}
+function tudo() {
+    msg.innerHTML = `R$${deposito}`
+    dep.value = ""
+}
+</script>

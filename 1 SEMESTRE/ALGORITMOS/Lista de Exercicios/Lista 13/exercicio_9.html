@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 9. (desafio) A Professora Julia gosta de analisar as notas dos alunos pela média que um grupo obteve.
+     Faça um programa que auxilie o Julia a analisar as notas de seus alunos
+
+a) Tenha dois campos de entrada: um para o RA do aluno e outro para a nota dele.
+
+b) Tenha um botão “guardar” que vai cadastrando todos os valores do item a)
+
+c) Mais abaixo deve haver um campo para a Julia entrar com o valor “P” ou “I” , se ela digitar
+ algo diferente disso emitir um alerta “valor invalido, entre com P ou I”. Deve haver também um botão 
+ "Analisar".
+
+d) Quando o botão “Analisar” for clicado o programa deve fazer:
+
+1-Se o valor entrado no item c) for “P” selecionar todos os alunos com RA par e calcular a média 
+de suas notas. Se o valor entrado no item c) for “I” selecionar todos os alunos com RA impar e calcular 
+a média de suas notas.
+
+2- Para todas as notas cadastradas que forem maiores ou iguais a média calculada no item acima, 
+mostra-las uma embaixo da outra, da seguinte forma:
+
+            Aluno com RA = xxxxxxx e nota 99,9 foi selecionado pois a média é 99,9
+
+d) Ao final emitir uma mensagem com: quantidade de notas acima da média, e a nova média 
+(média das notas maiores que a média do critério de seleção). -->
+<input type="text" id="ra" placeholder="insira o seu RA">
+<input type="text" id="nota" placeholder="insira a sua nota">
+<button onclick="analisar()">guardar</button>
+<input type="text" id="pi" placeholder="insira P ou I">
+<button onclick="verificar()">guardar</button>
+
+</body>
+</html>
+<script>
+var ras = []
+var notas = []
+    function analisar() {
+        ras.push(ra.value);
+        ra.value = '';
+        notas.push(nota.value);
+        nota.value = '';
+    }
+    function verificar() {
+        if (pi.value == 'P' || pi.value == 'I') {
+            
+        } else {
+        msg.innerHTML = 'valor invalido, entre com P ou I'
+            
+        }
+    }
+</script>

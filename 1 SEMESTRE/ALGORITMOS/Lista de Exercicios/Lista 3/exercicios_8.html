@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <h2> Calcule os Descontos</h2>
+    <b>Salário do trabalhador</b><br>
+    <input id="salario" type="number" placeholder="Insira seu salário R$" ><br><br>
+    <button onclick="calcular()">Calcular Descontos</button>
+    <div id="resultado"></div>
+
+    
+</body>
+</html>
+<script>
+        function calcular() {
+            var desconto_inss = (Number(salario.value)* 0.1)
+            var desconto_ir = (Number(salario.value) * 0.2)  
+            var soma = (Number (desconto_inss) + Number (desconto_ir))
+            var total = (Number(salario.value) - (soma))
+            resultado.innerHTML = `Seus descontos serão de:<br>
+            INSS: R$${desconto_inss}<br>
+            IR: R$${desconto_ir}<br>
+            Total de descontos: R$${soma}<br>
+            Seu salário, após os descontos será de: R$${total}`
+        }
+
+
+
+</script>

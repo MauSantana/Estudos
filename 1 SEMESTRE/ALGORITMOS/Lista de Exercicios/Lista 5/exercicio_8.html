@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <h3>Banco Itado</h3>
+    Saldo:<br><input id="saldo" type="number" placeholder="Insira o saldo da conta..." ><br><br>
+    Valor débito:<br><input id="deb" type="number" placeholder="Insira o valor do débito..." ><br><br>
+    <button onclick="verificar()" >Analisar conta</button>
+    <div id="msg"></div>
+
+</body>
+</html>
+<script>
+    function verificar() {
+        var total = Number (saldo.value - deb.value)
+msg.innerHTML = `o saldo atual da conta corrente é ${total}`
+msg.style = "color: black;"    
+    if(total < 0) {
+msg.innerHTML = `<b>o saldo atual da conta corrente é ${total}</b>`
+msg.style = "color: red;"
+    }
+}
+</script>

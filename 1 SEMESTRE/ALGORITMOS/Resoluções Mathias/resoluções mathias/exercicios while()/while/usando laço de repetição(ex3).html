@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="time_bom" placeholder="Ponha aqui um time bom"> <br>
+    <input type="text" id="time_ruim" placeholder="Ponha aqui um time ruim"> <br>
+   <button onclick="repetir()">Repetir a realidade!</button>
+   <div id="div_times"></div>
+</body>
+</html>
+<script>
+   div_times.innerHTML = '';
+
+   function repetir(){
+    
+    var contador = 0;
+
+       while (contador < 10){
+         div_times.innerHTML += `${time_bom.value} é melhor do que ${time_ruim.value} <br>`;
+         contador++;
+       }
+   }
+</script>

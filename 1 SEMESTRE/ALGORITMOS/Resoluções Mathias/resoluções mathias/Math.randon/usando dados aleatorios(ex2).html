@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <button onclick="gerar_nota()">Gerar uma nota de aluno entre 0 e 10</button> <br>
+        <div id="div_nota"></div> <br>
+        <button onclick="gerar_frequencia()">Gerar uma frequência de aluno entre 0 e 100</button> <br>
+        <div id="div_frequencia"></div> <br>
+    </center>
+    
+</body>
+</html>
+<script>
+    var nota = 0;
+    var frequencia = 0;
+
+    function gerar_nota(){
+        nota = (Math.random() * 9) + 1;
+        div_nota.innerHTML = nota.toFixed(2);
+    }
+
+    function gerar_frequencia(){
+        frequencia = parseInt(Math.random() * 101) - 1;
+        div_frequencia.innerHTML = frequencia;
+        
+    }
+</script>

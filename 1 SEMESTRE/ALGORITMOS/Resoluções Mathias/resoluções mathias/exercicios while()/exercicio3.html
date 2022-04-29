@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="timeum" placeholder="diga um time bom">
+    <input type="text" id="timedois" placeholder="diga um time ruim">
+
+    <button onclick="dizer()">ver rivalidade</button>
+    <div id="texto"></div>
+</body>
+
+</html>
+<script>
+    var contador = 0; // contagem de vezes que já mostrei o alert e na tela
+
+    span_frases.innerHTML = '';
+
+    function dizer() {
+        while (contador < 10) {
+            texto.innerHTML += `<b>${timeum.value}</b> é melhor que <b>${timedois.value}</b><br>`;
+            contador++
+        }
+    }
+</script>

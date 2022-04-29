@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <!-- Crie um programa em HTML/JS o qual:
+
+a) Tenha um botão "Conte de 5 em 5"
+
+b) Ao clicar nele, mostre na tela, um abaixo do outro,
+ os números de 0 a 200, mas de 5 em 5 (ex: 0, 5, 10, 15...) -->
+ <button onclick="analisar()">Conte de 5 em 5</button>
+ <div id="msg"></div> 
+
+</body>
+</html>
+<script>
+    function analisar() {
+        msg.innerHTML = ''
+        // Fiz a divisão de 200 dividido por 5, assim as linhas não ultrapassam o numero de 200
+        for (var contador = 0; contador <= 40; contador++) {
+            var cinco = contador * 5;
+            msg.innerHTML += `${cinco}<br>`;
+            
+        }
+    }
+</script>

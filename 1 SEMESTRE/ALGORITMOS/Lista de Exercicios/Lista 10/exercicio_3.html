@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <!-- 3. Crie um programa em HTML/JS o qual:
+a) Pergunte o nome de um time de futebol que ache bom e de outro que ache ruim
+b) Ao clicar num botão "Repetir a realidade!", exiba 10 vezes na tela um conteúdo
+parecido com este:
+ NOME TIME 1 é melhor do que NOME TIME 2
+ (replique as formatações desse exemplo)  -->
+ BOM :<input id="bom" type="text" placeholder=" Insira um time de futebol"><br><br>
+ RUIM:<input id="ruim" type="text" placeholder=" Insira um time de futebol"><br><br>
+<button onclick="analisar()" >Repetir a realidade!</button>
+<div id="msg" ></div>
+</body>
+</html>
+<script>
+    function analisar() {
+    var contador = 1
+    msg.innerHTML = '';
+    while (contador <=10){
+    msg.innerHTML += `${bom.value} é melhor do que ${ruim.value}<br>`;
+    contador++;
+}
+}
+</script>

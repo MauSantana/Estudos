@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+</head>
+<!-- 12. Melhore o programa da questão anterior de tal forma que:
+a) Abaixo da frase do valor guardado tenha as seguintes frases:
+    Quantidade de depósitos feitos: 0
+    Quantidade de retiradas feitas: 0
+b) Sempre que for clicado no botão "Depositar", o valor de "depósitos feitos" aumenta em 1
+c) Sempre que for clicado no botão "Tirar toda a grana", o valor de "retiradas feitas" aumenta em 1
+ -->
+
+<body>
+    <h3>Cofrinho</h3>
+    Valor guardado no cofrinho: <div id="msg">R$0.00</div>  <br> 
+    Quantidade de depósitos feitas: <b><div id="msg_dois">0</div></b>  <br> 
+    Quantidade de retiradas feitas: <b><div id="msg_tres">0</div></b>  <br> <br>
+    <input id="dep" type="number" placeholder="Insira o valor a ser depositado " >
+    <button onclick="depositar()" >Depositar</button>
+    <button onclick="tudo()" >Tirar toda a grana</button>
+
+</body>
+</html>
+<script>
+    var deposito = 0.00
+    var cli = 0
+    var cli_dois = 0
+function depositar() {
+    msg.innerHTML = `R$${dep.value}`;
+    cli ++;
+    msg_dois.innerHTML = cli; 
+}
+function tudo() {
+    msg.innerHTML = `R$${deposito}`
+    cli_dois ++;
+    msg_tres.innerHTML = cli_dois; 
+    dep.value = ""
+}
+</script>

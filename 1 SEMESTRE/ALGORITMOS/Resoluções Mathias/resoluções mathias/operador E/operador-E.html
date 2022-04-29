@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+      temperatura do ambiente: <input type="number" id="temperatura"> <br>
+      <button onclick="conforto()">medir conforto</button>
+    </center>
+</body>
+</html>
+<script>
+    function conforto(){
+        var temp_final = Number(temperatura.value);
+
+
+        if(temp_final >= 22 && temp_final <= 23){
+            alert("Temperatura confortável!");
+        }else{
+            alert("Temperatura não está confortável!");
+        }
+    }
+</script>

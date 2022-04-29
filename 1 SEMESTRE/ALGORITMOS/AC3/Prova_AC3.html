@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova_AC3</title>
+</head>
+
+<body>
+    <h1>Banco Perudesco</h1>
+    Nome do cliente: <br><input type="text" id="cli" placeholder="Insira seu nome..."><br><br>
+    Valor depositado na Poupança: <br><input type="number" id="poup"
+        placeholder="Insira o deposito na poupança..."><br><br>
+    Valor depositado em Renda Fixa: <br><input type="number" id="renFix"
+        placeholder="Insira o deposito em Renda Fixa..."><br><br>
+    Valor depositado em Multi Mercado: <br><input type="number" id="multiMer"
+        placeholder="Insira o deposito em Multi Mercado..."><br><br>
+    <button onclick="analisar()"> Guardar Dados</button><br><br>
+    <button onclick="verificar()"> Analisar Dados</button><br><br>
+    <div id="msg"></div>
+    <div id="msg_dois"></div>
+    <div id="msg_tres"></div>
+    
+   
+    
+</body>
+
+</html>
+<script>
+    var conteudo = []
+
+
+    function analisar() {
+        var dados = {
+            nome: cli.value,
+            dep_poup: poup.value,
+            dep_renda: renFix.value,
+            dep_mult_merc: multiMer.value
+        }
+
+        if ((cli.value.length > 0) && (poup.value > 0 || renFix.value > 0 || multiMer > 0)) {
+            conteudo.push(dados)
+            cli.value = '';
+            poup.value = '';
+            renFix.value = '';
+            multiMer.value = '';
+        } else {
+            alert('Você não preencheu os campos devidamente!');
+        }
+
+    }
+    function verificar() {
+        msg.innerHTML = ''
+        msg_dois.innerHTML = ''
+        for (var contador = 0; contador <= conteudo.length; contador++) {
+            // dados.perc = dados.dep_poup * 0.05 + dados.dep_renda * 0.07 + dados.dep_mult_merc * 0.09
+            // dados.soma = dados.dep_poup + dados.dep_renda + dados.dep_mult_merc;
+            // dados.rend = (val_rendimento / total) * 100
+            
+            // var media_carteira = conteudo[dados].perc / conteudo.length
+
+
+            if ((contador < conteudo.length) && (conteudo[contador].dep_poup > conteudo[contador].renFix
+             && conteudo[contador].dep_poup > conteudo[contador].multiMer)){
+                msg.innerHTML += `Cliente ${conteudo[contador].nome} com Investimento Total de R$ ,
+            obteve o Rendimento de R$ ,
+            com Percentual de , sendo:<br>` 
+            msg_dois.innerHTML += ` <img src="poupanca.jpg" alt=""><br>`
+            } else if((contador < conteudo.length) && (conteudo[contador].renFix > conteudo[contador].dep_poup
+             && conteudo[contador].renFix > conteudo[contador].multiMer)){
+                msg.innerHTML += `Cliente ${conteudo[contador].nome} com Investimento Total de R$ ,
+            obteve o Rendimento de R$ ,
+            com Percentual de , sendo:<br>` 
+            msg_dois.innerHTML += ` <img src="poupanca.jpg" alt=""><br>`
+            } else {
+                msg.innerHTML += `Cliente ${conteudo[contador].nome} com Investimento Total de R$,
+            obteve o Rendimento de R$ ,
+            com Percentual de , sendo:<br>` 
+                msg_dois.innerHTML += ` <img src="multimercado.jpg" alt=""><br>`
+            } 
+            
+
+            //  msg_tres.innerHTML = `RENDIMENTO MÉDIO DA CARTEIRA = ``% <br>
+
+            //  TOTAL DE CLIENTES CADASTRADOS = ${} <br>
+
+            //  TOTAL DE CLIENTES LISTADOS = ${} <br>
+
+            //  TOTAL GERAL DE POUPANÇA = R$ ${} <br>
+
+            //  TOTAL GERAL DE RENDA FIXA = R$ ${} <br>
+
+            //  TOTAL GERAL DE MULTI MERCADO = R$ ${}`
+        }
+    }
+</script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Exercicio 20 lista 3</title>
+</head>
+<body>
+    <input type="text" autofocus placeholder="Tu sabor de pizza" id="sabor"><br>
+
+    <select id="pizza1">
+        <option value="">==escolha==</option>
+        <option value="23">Queijo</option>
+        <option value="25">Presunto</option>
+        <option value="23">ovo</option>
+        <option value="26">Palmito</option>
+        <option value="16">Frango</option>
+        <option value="30">Catupiry</option>
+    </select>
+    <select id="pizza2">
+        <option value="">==escolha==</option>
+            <option value="23">Queijo</option>
+            <option value="25">Presunto</option>
+            <option value="23">ovo</option>
+            <option value="26">Palmito</option>
+            <option value="16">Frango</option>
+            <option value="30">Catupiry</option>
+        </select>
+        <select id="pizza3">
+            <option value="">==escolha==</option>
+                <option value="23">Queijo</option>
+                <option value="25">Presunto</option>
+                <option value="23">ovo</option>
+                <option value="26">Palmito</option>
+                <option value="16">Frango</option>
+                <option value="30">Catupiry</option>
+            </select>
+<div id="div_pizza"></div>    
+<button onclick="calculo_pizza()">Calcular preço da pizza</button>        
+</body>
+</html>
+<script>
+function calculo_pizza(){
+    var pizza_S = Number(pizza1.value) + Number(pizza2.value) + Number(pizza3.value);
+    div_pizza.innerHTML = `a pizza de sabor <b> ${sabor.value}</b> vai custar <u>R$ ${pizza_S}</u>`;
+}
+</script>

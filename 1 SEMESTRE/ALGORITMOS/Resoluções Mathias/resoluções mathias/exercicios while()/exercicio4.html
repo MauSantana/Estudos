@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="quem" placeholder="diga quem você ama">
+    <input type="number" id="num" placeholder="diga o quanto você ama">
+
+    <button onclick="dizer()">mostar</button>
+    <div id="texto"></div>
+</body>
+
+</html>
+<script>
+    var contador = 0;
+
+
+
+
+
+    function dizer() {
+        var valor = Number(num.value);
+        var nome = quem.value;
+
+        while (contador < valor) {
+            texto.innerHTML += `<b>${nome}</b> eu te amo <i>sempre se lembre disso!</i><br>`;
+            contador++
+        }
+    }
+</script>

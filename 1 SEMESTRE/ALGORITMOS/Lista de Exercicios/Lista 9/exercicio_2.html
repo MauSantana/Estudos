@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <!-- Crie um programa em HTML/JS o qual:
+
+a) Tenha um botão "Jogador 1 jogar dadinho" que faz aparecer, abaixo dele,
+ o valor de um dadinho de 6 lados sorteado
+
+b) Tenha um botão "Jogador 2 jogar dadinho" que faz aparecer, abaixo dele,
+ o valor de um dadinho de 6 lados sorteado
+
+c) Ainda após o clique do segundo botão, exiba abaixo de tudo uma dessas frases:
+   "Jogador [1 ou 2] venceu" caso um deles tenha vencido
+   "Empate", caso de empate -->
+   <button onclick="analisar()" >Jogador 1 jogar dadinho</button><br>
+   <div id="msg" ></div><br>
+   <button onclick="analisar_dois()" >Jogador 2 jogar dadinho</button><br>
+   <div id="msg_dois" ></div><br>
+   <br><br>
+   <div id="final" ></div>
+   
+
+</body>
+</html>
+<script>
+    var dado1 = 0
+    var dado2 = 0
+    function analisar() {
+    dado1 =  parseInt(Math.random() * 6 + 1);
+    msg.innerHTML = dado1
+    }
+
+    function analisar_dois() {
+    dado2 =  parseInt(Math.random() * 6 + 1);
+    msg_dois.innerHTML = dado2
+    if (dado1 > dado2) {
+        final.innerHTML =`Jogador 1 venceu` 
+    } else if (dado2 > dado1){
+        final.innerHTML =`Jogador 2 venceu` 
+    } else {
+        final.innerHTML =`empate` 
+
+    }
+    
+    }
+</script>

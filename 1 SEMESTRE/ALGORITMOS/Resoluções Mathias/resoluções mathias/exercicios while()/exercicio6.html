@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <button onclick="dizer()">eu S2 pares</button>
+    <div id="texto"></div>
+</body>
+
+</html>
+<script>
+    var contador = 0;
+
+
+
+
+
+    function dizer() {
+        var n = 0;
+
+        while (contador < 50) {
+            n++
+            texto.innerHTML += `<b>${n*2}</b><br>`;
+
+            contador++
+        }
+    }
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<!-- Refaça a questão 9 da lista anterior (do elevador)
+de tal forma que, caso o peso total no elevador seja até 800, deve aparecer a frase "Elevador pode partir" -->
+<body>
+    <h3>Controlador de peso</h3>
+Homens:<br><input id="hom" type="number" placeholder="Insira a quantidade de homens..." ><br><br>
+Mulheres:<br><input id="mul" type="number" placeholder="Insira  a quantidade de mulheres..." ><br><br>  
+<button onclick="verificar()" >Analisar peso</button>
+<div id="msg"></div>
+<div id="msg_dois"></div>
+
+</body>
+</html>
+<script>
+    function verificar() {
+        var qtd_hom = Number (hom.value) * 80
+        var qtd_mul = Number (mul.value) * 60
+        var soma =  qtd_hom + qtd_mul
+        msg.innerHTML = `Este elevador suporta 800 Kg e o peso estimado desta lotação é de ${soma}kg` 
+
+        if(soma > 800) {
+            msg_dois.innerHTML = `Será necessário descer alguém para que o elevador se movimente`
+            msg_dois.style = "color:blue;"
+        } 
+        else {
+            msg_dois.innerHTML ="Elevador pode partir" 
+            msg_dois.style = "color:black"
+        }
+    }
+</script>

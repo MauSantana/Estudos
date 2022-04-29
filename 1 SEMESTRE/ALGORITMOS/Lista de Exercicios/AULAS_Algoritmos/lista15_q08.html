@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista For ex.08</title>
+</head>
+<body>
+    <h3>Lista For - Exec 08</h3>
+    Quantas Coca-Colas você já bebeu na vida?
+    <input id="qtde" type="text" placeholder="Qtde de Coca-Cola" autofocus>
+    <br>
+    <button onclick="mostrar()">Ver a quantidade</button>
+    <br><br>
+    <div id="div_coca"></div>
+    
+</body>
+</html>
+<script>
+    function mostrar() {
+        div_coca.innerHTML = "";
+        for (var cont=0; cont < qtde.value; cont++) {
+            div_coca.innerHTML += '<img src="cocacola.jpg" style="width: 40px;">';  
+        }
+    }
+</script>

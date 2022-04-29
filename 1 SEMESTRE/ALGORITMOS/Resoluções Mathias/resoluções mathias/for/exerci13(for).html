@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="jogar_cartas()">Ver minha sorte</button> <br>
+    <div id="div_jogo"></div>
+</body>
+</html>
+<script>
+    function jogar_cartas(){
+        div_jogo.innerHTML = '';
+        var valor_sorte = 21;
+        var coraçao = 0;
+        var carta = 0;
+
+        for (var contador = 0; contador < valor_sorte; contador++) {
+            
+            var aleatorio = parseInt(Math.random()*2);
+
+            if (aleatorio == 1) {
+                
+                div_jogo.innerHTML += `<img src="coração_falso.png" alt="" style="width: 100px; height: 100px;">`;
+                coraçao++
+            }
+            else{
+                div_jogo.innerHTML += `<img src="copa_vermelho_carta.png" alt="" style="width: 100px; height: 100px;">`;
+                carta++
+            }
+            
+        }
+         if (coraçao > carta) {
+                div_jogo.innerHTML += `<b> <br>Você tem mais sorte no amor</b>`;
+            }
+            else{
+                div_jogo.innerHTML += `<b><br>Você tem mais sorte no jogo</b>`;
+            }
+    }
+</script>

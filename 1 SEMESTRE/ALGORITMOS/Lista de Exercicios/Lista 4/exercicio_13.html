@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_13</title>
+</head>
+<body>
+    <!-- 13. Crie um programa em HTML/JS que ajuda um nutricionista a calcular calorias
+     diárias consumidas por seus pacientes:
+a) Tenho, logo de cara, o texto:
+    Porções de pão francês: 0   
+    Porções de carne boniva: 0   
+    Porções de carne de soja: 0  
+    Porções de arroz com feijão: 0
+    Total de calorias: 0   
+b) Tenha o botão "Comer um pão francês". Ao clicar nele,
+ aumenta em um o contador respectivo no texto em a) e adiciona 50 calorias ao final do mesmo texto.
+c) Tenha o botão "Comer porção de carne boniva".
+ Ao clicar nele, aumenta em um o contador respectivo no texto em a) e adiciona 100 calorias ao final do mesmo texto.
+d) Tenha o botão "Comer porção de carne de soja".
+ Ao clicar nele, aumenta em um o contador respectivo no texto em a) e adiciona 30 calorias ao final do mesmo texto.
+e) Tenha o botão "Comer porção de arroz com feijão".
+ Ao clicar nele, aumenta em um o contador respectivo no texto em a) e adiciona 120 calorias ao final do mesmo texto.
+f) Tenha o botão "Recomeçar", todos os contadores (até o total de calorias) do texto em a) zeram -->
+<h3>Ajudando a nutricionista</h3>
+
+Porções de pão francês: <div id="um">0</div>    
+Porções de carne boniva: <div id="dois">0</div>    
+Porções de carne de soja: <div id="tres">0</div>   
+Porções de arroz com feijão: <div id="qua">0</div> 
+Total de calorias: <div id="cinco">0</div>  
+
+<button onclick="pao()" >Comer um pão francês</button>
+<button onclick="boniva()" >Comer porção de carne boniva</button>
+<button onclick="soja()" >Comer porção de carne de soja</button>
+<button onclick="arroz()" >Comer porção de arroz com feijão</button>
+<button onclick="zerar()" >Recomeçar</button>
+ 
+</body>
+</html>
+<script>
+    var cli_pao = 0
+    var cli_boniva = 0
+    var cli_soja = 0
+    var cli_arroz = 0
+    var cli_total = 0
+
+    function pao () {
+    cli_pao ++;
+    um.innerHTML = cli_pao;
+    cli_total += 50;
+    cinco.innerHTML = cli_total;
+    }
+    function boniva(){
+    cli_boniva ++;
+    dois.innerHTML = cli_boniva;
+    cli_total += 100;
+    cinco.innerHTML = cli_total;
+    }
+    function soja(){
+    cli_soja ++;
+    tres.innerHTML = cli_soja;
+    cli_total += 30;
+    cinco.innerHTML = cli_total;
+    }
+    function arroz(){
+    cli_arroz ++;
+    qua.innerHTML = cli_arroz;
+    cli_total += 120;
+    cinco.innerHTML = cli_total;
+    }
+    function zerar(){
+    cli_pao = 0
+    cli_boniva = 0
+    cli_soja = 0
+    cli_arroz = 0
+    cli_total = 0
+    um.innerHTML = `${cli_pao}`
+    dois.innerHTML = `${cli_boniva}`   
+    tres.innerHTML = `${cli_soja}`    
+    qua.innerHTML = `${cli_arroz }`   
+    cinco.innerHTML = `${cli_total}`    
+    }
+</script>

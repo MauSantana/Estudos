@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="valor1" placeholder="quantidade de elefantes">
+    <button onclick="executar()">atazanar</button>
+    <div><i id="txt"></i></div>
+
+</body>
+
+</html>
+<script>
+    function executar() {
+        txt.innerHTML = "";
+        var enquanto = 1;
+        var num = Number(valor1.value);
+        while (enquanto < num) {
+            var incomoda = 0;
+            txt.innerHTML += `um elefante incomoda muita gente<br>`;
+
+            txt.innerHTML += `${enquanto +1} elefantes`
+            while (incomoda < enquanto + 1) {
+                txt.innerHTML += "  incomodam  "
+                incomoda++
+            }
+            txt.innerHTML += ` muito mais<br>`
+            enquanto++
+        }
+    }
+</script>

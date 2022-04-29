@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="dizer()">diga boa tarde</button>
+    <div id="texto"></div>
+</body>
+
+</html>
+<script>
+    var contador = 0; // contagem de vezes que já mostrei o alert e na tela
+
+    span_frases.innerHTML = '';
+
+    function dizer() {
+        while (contador < 7) {
+            texto.innerHTML += `${contador +1}. boa tarde <br>`;
+            contador++
+        }
+    }
+</script>

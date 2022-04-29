@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<!-- Refaça a questão 3 da lista anterior (da pizza) de tal forma que, caso o valor por amigo fique em até 20,00,
+deve aparecer a frase "Uhu! Vamos pedir a pizza!" -->
+<body>
+    <h3>Rachando a Pizza</h3>
+    Valor da Pizza:<input id="pizza_valor" type="number" placeholder="Insira o valor da Pizza..." ><br><br>
+    Qtd de Amigos:<input id="qtd_amigos" type="number" placeholder="Insira a Qtd de Amigos..." ><br><br>
+    <button onclick="analisar()" >Rola a pizza</button><br><br>
+    <div id="msg" ></div>
+
+</body>
+</html>
+<script>
+    function analisar () {
+    var media = (pizza_valor.value / qtd_amigos.value)
+    msg.innerHTML = `<b>Cada amigo vai pagar R$${media} pela pizza<br><br></b>` 
+    if (media > 20) {
+    msg.innerHTML += `<b>Deu ruim! Pizza muito cara!</b>`
+    }
+    else {
+    msg.innerHTML += `Uhu! Vamos pedir a pizza!`  
+    }
+}   
+</script>

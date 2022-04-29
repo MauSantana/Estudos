@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <!-- Refaça a questão 7 da lista IF-ELSE usando operador ternário. -->
+    <h3>turista vs estudioso</h3>
+    Frequência:<input id="freq" type="number" placeholder="Insira a Frequência..." ><br><br>
+    <button onclick="analisar()" >Analisar frequência</button><br><br>
+    <img id="goh" src="../Lista 6/IMG/Gohan.jpg" alt="" style="display: none;" height="200px" >
+    <img id="tur" src="../Lista 6/IMG/turista.png" alt="" style="display: none;"height="200px">
+</body>
+</html>
+<script>
+    function analisar() {
+        freq.value <50 ? (tur.style = "display: block;", goh.style = "display: none;")
+        : (goh.style = "display: block;", tur.style = "display: none;")
+        
+    }
+</script>

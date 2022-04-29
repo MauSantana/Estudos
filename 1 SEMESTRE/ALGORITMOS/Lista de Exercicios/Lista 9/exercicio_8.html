@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <!-- 8. Crie um programa em HTML/JS o qual:
+
+a) Solicite um número ao usuário
+
+b) Ao clicar em "É divisível por 7?", exiba uma alert dizendo "Sim, é"
+ caso o número informado em a) seja divisível por 7 ou "Não, não é", caso contrário -->
+ <input type="number" id="num" placeholder="Insira um numero...">
+
+ <button onclick="analisar()" >É divisível por 7?</button>
+ <div id="msg" ></div>
+</body>
+</html>
+<script>
+    function analisar() {
+    if ((num.value % 7) == 0) {
+        alert  ("Sim, é")
+    } else {
+        alert  ("Não, não é")
+    }  
+    }
+</script>

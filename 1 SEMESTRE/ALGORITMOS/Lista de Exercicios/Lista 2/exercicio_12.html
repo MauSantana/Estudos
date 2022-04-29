@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+</head>
+<body>
+    <h2>Mundial de clubes</h2>
+<button id="esconder" onclick="esconde()"style="display: block;" >Esconder escudos</button><br><br>
+<button id="aparecer" onclick="aparece()"style="display: none;" >Mostrar escudos</button><br><br>
+
+<a> <img id="escudo_cor" src="timao.png" onclick="timao()"  alt="" width="200px" style="display: block;"> </a>
+
+<div id="cor"  > 
+<img id="mund_um" src="mundial.png" alt="" height="100px" style="display: none;">
+<img id="mund_dois" src="mundial.png" alt="" height="100px" style="display: none;">
+</div style="display: none;">
+
+<a> <img id="escudo_sp" src="sp.png" onclick="sp()"  alt="" width="200px" style="display: block;"> </a>
+<div id="saopaulo"  > 
+<img id="mund_tres" src="mundial.png" alt="" height="100px" style="display: none;">
+<img id="mund_quatro" src="mundial.png" alt="" height="100px" style="display: none;">
+</div style="display: none;">
+
+<a> <img id="escudo_san" src="santos.png" onclick="santos()"  alt="" width="200px" style="display: block;"> </a> 
+<div id="santos_time"  > 
+ <img id="mund_cinco" src="mundial.png" alt="" height="100px" style="display: none;">
+<img id="mund_seis" src="mundial.png" alt="" height="100px" style="display: none;">
+<img id="mund_sete" src="mundial.png" alt="" height="100px" style="display: none;">
+</div style="display: none;">
+
+
+<a> <img id="escudo_pal" src="parmera.png" onclick="palmeiras()"  alt="" width="200px" style="display: block;"> </a>  
+<img id="sem" src="sem_mundial.png" alt="" height="200px" style="display: none;">
+
+<button onclick="reset()" >Resetar programa</button><br><br>
+
+
+</body>
+</html>
+<script>
+function timao(){
+cor.style = "display: block;"
+mund_um.style = "display: block;"
+mund_dois.style = "display: block;"
+saopaulo.style = "display: none;"
+santos_time.style = "display: none;"
+sem.style = "display: none;"
+}
+
+function sp(){
+saopaulo.style = "display: block;"
+mund_tres.style = "display: block;"
+mund_quatro.style = "display: block;"
+cor.style = "display: none;"
+santos_time.style = "display: none;"
+sem.style = "display: none;"
+}
+
+function santos(){
+santos_time.style = "display: block;"
+mund_cinco.style = "display: block;"
+mund_seis.style = "display: block;"
+mund_sete.style = "display: block;"
+cor.style = "display: none;"
+saopaulo.style = "display: none;"
+sem.style = "display: none;"
+}
+
+function palmeiras(){
+sem.style = "display: block;"
+cor.style = "display: none;"
+saopaulo.style = "display: none;"
+santos_time.style = "display: none;"
+}
+
+function reset() {
+cor.style = "display: none;"
+saopaulo.style = "display: none;"
+sem.style = "display: none;"
+santos_time.style = "display: none;"
+
+}
+
+function esconde () {
+escudo_cor.style = "display: none;"
+escudo_sp.style = "display: none;"
+escudo_san.style = "display: none;"
+escudo_pal.style = "display: none;"
+esconder.style = "display: none;"
+aparecer.style = "display: block;"
+
+}
+
+function aparece () {
+escudo_cor.style = "display: block;"
+escudo_sp.style = "display: block;"
+escudo_san.style = "display: block;"
+escudo_pal.style = "display: block;"
+esconder.style = "display: block;"
+aparecer.style = "display: none;"
+
+}
+
+</script>

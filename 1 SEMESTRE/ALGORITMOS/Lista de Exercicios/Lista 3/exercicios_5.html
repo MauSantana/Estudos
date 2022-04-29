@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinto</title>
+</head>
+<body>
+    <h3> Passagem de ônibus</h3>
+    
+</div>
+
+Valor da passagem de ônibus:
+<input id="pri_num" type="number" placeholder="R$"> <br><br>
+Quantidades de viagens ao mês:
+<input id="seg_num" type="text">
+<br><br>    
+<button onclick="multiplicar()">Calcular VT</button>
+<div id='div_mens'></div>
+</body>
+</html>
+<script>
+function multiplicar() {
+div_mens.innerHTML = "Você vai gastar <u>R$</u>" + pri_num.value * seg_num.value;"por mês com ônibus";
+
+}</script>  

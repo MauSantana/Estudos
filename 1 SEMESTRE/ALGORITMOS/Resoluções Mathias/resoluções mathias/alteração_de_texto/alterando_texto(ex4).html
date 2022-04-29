@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="email" id="frase_email" onkeyup="validar()" placeholder="Insira teu email aqui">
+    <br>
+    <div id="div_mensagem"></div>
+
+      <!-- use alt+shift+f para arrumar o codigo -->
+</body>
+
+</html>
+<script>
+    function validar() {
+        var valor_frase = frase_email.value;
+
+
+        if (valor_frase.indexOf('@') >= 0 && valor_frase.indexOf('.') >= 0) {
+            if (valor_frase.length >= 7) {
+                div_mensagem.innerHTML = 'email ok';
+            }
+        }
+        else {
+            div_mensagem.innerHTML = 'email invalido';
+        }
+
+    }
+</script>

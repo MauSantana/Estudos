@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <h3>Feedback</h3>
+    <!-- Solicite a nota da avaliação de um atendente e dê um feedback bem lúdico conforme segue.
+
+a) Solicite a nota da avaliação
+
+b) Ao clicar em "Avaliar", verifique se a avaliação está entre 0 e 5.
+ Caso não estiver, exiba um alert "Nota inválida. Digite de 0 a 5", caso contrário, siga para o item c)
+
+c) Exiba uma certa quantidade de "estrelinhas amarelas" conforme a nota dada:
+
+    5 estrelas cinzas, lado a lado, caso a nota for menor que 0.5
+    "meia" estrela amarela, meia estrela cinza e 4 estrelas cinzas, lado a lado,
+     caso a nota for entre 0.5 e menor que 1
+
+    uma estrela amarela, e 4 estrelas cinzas, lado a lado, caso a nota for entre 1 e menor que 1.5
+    E assim por diante, até a última possibilidade que é...
+
+    5 estrelas amarelas, lado a lado, caso a nota for exatamente 5 -->
+    <input id="nota" type="number" placeholder="Insira a nota da avaliação" >
+    <button onclick="analisar()" >Avaliar</button>
+<br><br>
+    <div id="zero" style="display: none; height: 100px; "  >
+        <img src="IMG/star_preto.png" alt="" style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt="" style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt="" style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt="" style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt="" style="height: 100px;" >
+    </div>  
+
+    <div id="cinco" style="display: none;" >
+        <img src="IMG/star.png" alt=" "style="height: 100px;" >
+        <img src="IMG/star.png"  alt=""style="height: 100px;" >
+        <img src="IMG/star.png" alt=""style="height: 100px;" >
+        <img src="IMG/star.png" alt=""style="height: 100px;" >
+        <img src="IMG/star.png"  alt=""style="height: 100px;" ></div>
+
+    <div id="quatro_meia" style="display: none;" >
+        <img src="IMG/star.png" alt=" "style="height: 100px;" >
+        <img src="IMG/star.png" alt=""style="height: 100px;" >
+        <img src="IMG/star.png" alt=""style="height: 100px;" >
+        <img src="IMG/star.png" alt=""style="height: 100px;" >
+        <img src="IMG/meia.jpg" alt=""style="height: 100px;" ></div>
+
+    <div id="quatro" style="display: none;" >
+        <img src="IMG/star.png" alt=" "style="height: 100px;" >
+        <img src="IMG/star.png"alt=""style="height: 100px;" >
+        <img src="IMG/star.png" alt=""style="height: 100px;" >
+        <img src="IMG/star.png" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" ></div>
+
+    <div id="tres_meia" style="display: none;" >
+        <img src="IMG/star.png" alt=" "style="height: 100px;" >
+        <img src="IMG/star.png" alt=""style="height: 100px;" >
+        <img src="IMG/star.png" alt=""style="height: 100px;" >
+        <img src="IMG/meia.jpg" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" ></div>
+
+    <div id="tres" style="display: none;" >
+        <img src="IMG/star.png" alt=" "style="height: 100px;" >
+        <img src="IMG/star.png"alt=""style="height: 100px;" >
+        <img src="IMG/star.png"alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" ></div>
+
+    <div id="dois_meia" style="display: none;" >
+        <img src="IMG/star.png" alt=" "style="height: 100px;" >
+        <img src="IMG/star.png"alt=""style="height: 100px;" >
+        <img src="IMG/meia.jpg" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" ></div>
+
+    <div id="dois" style="display: none;" >
+        <img src="IMG/star.png" alt=" "style="height: 100px;" >
+        <img src="IMG/star.png" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" ></div>     
+        
+    <div id="um_meia" style="display: none;" >
+        <img src="IMG/star.png" alt=" "style="height: 100px;" >
+        <img src="IMG/meia.jpg" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" ></div>  
+        
+    <div id="um" style="display: none;" >
+        <img src="IMG/star.png" alt=" "style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt=""style="height: 100px;" ></div> 
+        
+    <div id="meia" style="display: none; height: 100px; "  >
+        <img src="IMG/meia.jpg" alt="" style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt="" style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt="" style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt="" style="height: 100px;" >
+        <img src="IMG/star_preto.png" alt="" style="height: 100px;" >
+    </div>        
+
+</body>
+</html>
+<script>
+function analisar() {
+    if (nota.value < 0.5) {
+        meia.style = "display: none;"
+        um.style = "display: none;"
+        um_meia.style = "display: none;"
+        dois.style = "display: none;"
+        dois_meia.style = "display: none;"
+        tres.style = "display: none;"
+        tres_meia.style = "display: none;"
+        quatro.style = "display: none;"
+        quatro_meia.style = "display: none;"
+        cinco.style = "display: none;"
+        zero.style = "display: block;"
+        
+    } else if (nota.value >= 0.5 && nota.value < 1){
+        um.style = "display: none;"
+        meia.style = "display: block;"
+        um_meia.style = "display: none;"
+        dois.style = "display: none;"
+        dois_meia.style = "display: none;"
+        tres.style = "display: none;"
+        tres_meia.style = "display: none;"
+        quatro.style = "display: none;"
+        quatro_meia.style = "display: none;"
+        cinco.style = "display: none;"
+        zero.style = "display: none;"
+
+        
+    } else if (nota.value >= 1 && nota.value < 1.5){
+        um.style = "display: block;"
+        meia.style = "display: none;"
+        um_meia.style = "display: none;"
+        dois.style = "display: none;"
+        dois_meia.style = "display: none;"
+        tres.style = "display: none;"
+        tres_meia.style = "display: none;"
+        quatro.style = "display: none;"
+        quatro_meia.style = "display: none;"
+        cinco.style = "display: none;"
+        zero.style = "display: none;"
+
+
+    }else if (nota.value >= 1.5 && nota.value < 2){
+        um_meia.style = "display: block;"
+        meia.style = "display: none;"
+        um.style = "display: none;"
+        dois.style = "display: none;"
+        dois_meia.style = "display: none;"
+        tres.style = "display: none;"
+        tres_meia.style = "display: none;"
+        quatro.style = "display: none;"
+        quatro_meia.style = "display: none;"
+        cinco.style = "display: none;"
+        zero.style = "display: none;"
+
+
+    }else if (nota.value >= 2 && nota.value < 2.5){
+        dois.style = "display: block;"
+        meia.style = "display: none;"
+        um.style = "display: none;"
+        um_meia.style = "display: none;"
+        dois_meia.style = "display: none;"
+        tres.style = "display: none;"
+        tres_meia.style = "display: none;"
+        quatro.style = "display: none;"
+        quatro_meia.style = "display: none;"
+        cinco.style = "display: none;"
+        zero.style = "display: none;"
+
+
+    }else if (nota.value >= 2.5 && nota.value < 3){
+        dois_meia.style = "display: block;"
+        meia.style = "display: none;"
+        um.style = "display: none;"
+        um_meia.style = "display: none;"
+        dois.style = "display: none;"
+        tres.style = "display: none;"
+        tres_meia.style = "display: none;"
+        quatro.style = "display: none;"
+        quatro_meia.style = "display: none;"
+        cinco.style = "display: none;"
+        zero.style = "display: none;"
+
+
+    }else if (nota.value >= 3 && nota.value < 3.5){
+        tres.style = "display: block;"
+        meia.style = "display: none;"
+        um.style = "display: none;"
+        um_meia.style = "display: none;"
+        dois.style = "display: none;"
+        dois_meia.style = "display: none;"
+        tres_meia.style = "display: none;"
+        quatro.style = "display: none;"
+        quatro_meia.style = "display: none;"
+        cinco.style = "display: none;"
+        zero.style = "display: none;"
+
+
+
+    }else if (nota.value >= 3.5 && nota.value < 4){
+        tres_meia.style = "display: block;"
+        meia.style = "display: none;"
+        um.style = "display: none;"
+        um_meia.style = "display: none;"
+        dois.style = "display: none;"
+        dois_meia.style = "display: none;"
+        tres.style = "display: none;"
+        quatro.style = "display: none;"
+        quatro_meia.style = "display: none;"
+        cinco.style = "display: none;"
+        zero.style = "display: none;"
+
+
+    }else if (nota.value >= 4 && nota.value < 4.5){
+        quatro.style = "display: block;"
+        meia.style = "display: none;"
+        um.style = "display: none;"
+        um_meia.style = "display: none;"
+        dois.style = "display: none;"
+        dois_meia.style = "display: none;"
+        tres.style = "display: none;"
+        tres_meia.style = "display: none;"
+        quatro_meia.style = "display: none;"
+        cinco.style = "display: none;"
+        zero.style = "display: none;"
+
+
+    }else if (nota.value >= 4.5 && nota.value <= 4.9) {
+        quatro_meia.style = "display: block;"
+        meia.style = "display: none;"
+        um.style = "display: none;"
+        um_meia.style = "display: none;"
+        dois.style = "display: none;"
+        dois_meia.style = "display: none;"
+        tres.style = "display: none;"
+        quatro.style = "display: none;"
+        tres_meia.style = "display: none;"
+        cinco.style = "display: none;"
+        zero.style = "display: none;"
+
+        
+    }else if (nota.value == 5){
+        cinco.style = "display: block;"
+        meia.style = "display: none;"
+        um.style = "display: none;"
+        um_meia.style = "display: none;"
+        dois.style = "display: none;"
+        dois_meia.style = "display: none;"
+        tres.style = "display: none;"
+        quatro.style = "display: none;"
+        tres_meia.style = "display: none;"
+        quatro_meia.style = "display: none;"
+        zero.style = "display: none;"
+
+
+    }else{
+        alert ("Nota inválida. Digite de 0 a 5")
+    }
+}
+</script>

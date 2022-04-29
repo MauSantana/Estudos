@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <h3>Desempenho do aluno</h3>
+    <!-- 9. Crie um programa em HTML/JS que avalie o desempenho de um aluno, o qual:
+
+a) Solicite a nota e a frequência do aluno
+
+b) Ao clicar em "Analisar aluno", faça as seguintes ações...
+
+c) Caso a nota não seja válida, ou seja, caso não esteja entre 0 e 10, exiba um alert 
+"Onde já se viu nota <0 ou >10?!" e limpe qualquer outro resultado que já estiver aparecendo na tela
+
+d) Caso a frequência não seja válida, ou seja, caso não esteja entre 0 e 100, exiba um alert 
+"Onde já se viu frequência <0 ou >100?!" e limpe qualquer outro resultado que já estiver aparecendo na tela
+
+e) Caso a nota estiver entre 0 e menor que 6, exiba na tela essa frase: "Aluno ficou abaixo da média"
+
+f) Caso a nota estiver entre 6 e 8, exiba na tela essa frase: "Aluno ficou da média"
+
+g) Caso a nota estiver entre mais que 8 e 10, exiba na tela essa frase: "Aluno acima da média"
+
+h) Caso o aluno tiver frequência a partir de 75, exiba na tela "Aluno aprovado por frequência" ou 
+"Aluno reprovado por frequência", em caso contrário -->
+<input id="nota" type="number" placeholder="Insira sua nota">
+<input id="freq" type="number" placeholder="Insira sua frequência">
+<button onclick="analisar()" >Analisar aluno</button>
+<div id="msg"></div>
+<div id="msg_dois" ></div>
+</body>
+</html>
+<script>
+    function analisar() {
+        if (nota.value >0 && nota.value <6) {
+            msg.innerHTML = "Aluno ficou abaixo da média"
+        } else if (nota.value >=6 && nota.value <=8) {
+            msg.innerHTML = "Aluno ficou da média"
+        } else if (nota.value >8 && nota.value <=10) {
+            msg.innerHTML = "Aluno acima da média"
+
+        }   else{
+            alert ("Onde já se viu nota <0 ou >10?!")
+            msg.innerHTML = ""
+            msg_dois.innerHTML = ""
+
+        } if (freq.value >=75 && freq.value <=100) {
+            msg_dois.innerHTML = "Aluno aprovado por frequência"
+        } else if (freq.value >=0 && freq.value <75) {
+            msg_dois.innerHTML = "Aluno reprovado por frequência" 
+        } else {
+            alert ("Onde já se viu frequência <0 ou >100?!") 
+            msg.innerHTML = ""
+            msg_dois.innerHTML = ""
+        }
+}
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="inpValor" onkeyup="rodar()">
+    <br>
+    <div id="div_resultado"></div>
+</body>
+
+</html>
+<script>
+    function rodar() {
+        var valor = inpValor.value;
+
+        while (valor.indexOf('a') >= 0 || valor.indexOf('e') >= 0) {
+            valor = valor.replace('a', '@');
+            valor = valor.replace('A', '@');
+            valor = valor.replace('e', '3');
+            valor = valor.replace('E', '3');
+        }
+        div_resultado.innerHTML = valor;
+    }
+</script>

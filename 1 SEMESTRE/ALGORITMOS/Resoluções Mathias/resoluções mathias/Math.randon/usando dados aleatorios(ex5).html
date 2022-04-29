@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <button onclick="sortear()">sortear temperatura</button>
+        <div id="div_temp"></div>
+    </center>
+</body>
+</html>
+<script>
+var temp = 0;
+
+   function sortear(){
+       temp = parseInt(Math.random()*102) - 52;
+
+       div_temp.innerHTML = `A temperatura sorteada foi: ${temp} <br>`;
+
+       if (temp < -50){
+            temp = -50;
+        }else if (temp > 50){
+            temp = 50
+        } if(temp <= 1){
+       div_temp.innerHTML += `Dá pra conservar qualquer alimento`;
+       }else if(temp >= 1 && temp == 10){
+       div_temp.innerHTML += `Conserva a maioria dos alimentos`;
+       }else{
+       div_temp.innerHTML += `Estraga a maioria dos alimentos`;
+       }
+   }
+</script>

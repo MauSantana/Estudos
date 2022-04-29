@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="quantidade_repetição" placeholder="repetição"> <br>
+    <input type="text" id="frase" placeholder="frase de sua escolha">
+    <br> <button onclick="user_repeti()">rodar</button> <br>
+    <div id="div_fala"></div>
+</body>
+</html>
+<script>
+       function user_repeti(){
+        
+        var receber_quantidade = Number(quantidade_repetição.value);
+
+      for (var contador = 1; contador <= receber_quantidade; contador++) {
+          div_fala.innerHTML += `${contador} - ${frase.value} <br>`;
+      }
+    }
+</script>

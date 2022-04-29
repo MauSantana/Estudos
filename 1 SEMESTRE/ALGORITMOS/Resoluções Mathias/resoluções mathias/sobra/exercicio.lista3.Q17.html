@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>resolucao lista 3 Q17</title>
+</head>
+<body>
+    <select id="trechos">
+        <option value="obra">escolha um trecho</option>
+        <option value="que eu leve o Amor.">Onde houver Ódio</option>
+        <option value="que eu leve o Perdão.">Onde houver Ofensa</option>
+        <option value="que eu leve a União.">Onde houver Discórdia</option>
+        <option value="que eu leve a Esperança.">Onde houver Desespero</option>
+    </select>
+<button onclick="revelar()">revelar boa obra</button>
+<div id="div_sagrada"></div>
+
+</body>
+</html>
+<script>
+function revelar(){
+div_sagrada.innerHTML = `<sapan style="color: green"> ${trechos.value}</span>`;
+}
+</script>

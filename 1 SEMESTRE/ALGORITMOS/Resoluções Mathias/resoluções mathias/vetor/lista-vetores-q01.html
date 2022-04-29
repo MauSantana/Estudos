@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Vetores - q01</title>
+</head>
+<body>
+
+    <h3>Cadastre e consulte seus filmes favoritos</h3>
+
+    <input placeholder="Novo" id="novo_filme">
+    <button onclick="cadastrar()">Cadastrar</button>
+    
+    <br> <br>
+
+    <div id="painel" style="display: none;">
+        Seu filme favorito: <span id="s_favorito"></span> 
+        <br>
+        Seu 3º filme favorito: <span id="s_filme3"></span>
+        <br>
+        Total de filmes cadastrados: <span id="s_cadastrados"></span>
+    </div> 
+
+    
+</body>
+</html>
+<script>
+    let filmes = [];
+
+    function cadastrar() {
+        filmes.push(novo_filme.value);
+
+        painel.style.display = 'block';
+
+        s_favorito.innerHTML = filmes[0];
+
+        if (filmes.length >= 3) {
+            s_filme3.innerHTML = filmes[2];
+        } else {
+            s_filme3.innerHTML = 'Ainda não existe';
+        }
+        
+        s_cadastrados.innerHTML = filmes.length;
+    }
+
+</script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <h2>Dragon Ball Z</h2><br>
+
+    Ki Base<br>
+    <input id="ki" type="number" placeholder="Insira o Ki do guerreiro" ><br><br>
+
+    Transformar em<br>
+    <button onclick="calcular()">SSJ</button>
+    <button onclick="calcular2()">SSJ2</button>
+    <button onclick="calcular3()">SSJ3</button>
+    <div id="total" ></div>
+</body>
+</html>
+<script>
+    function calcular(){
+        var pri = (Number(ki.value) *50 )
+    total.innerHTML = ` Após se transformar em SSJ, o ki desse Sayajin passa a ser de ${pri}`
+
+    }
+    function calcular2(){
+        var seg = (Number(ki.value) *100 )
+    total.innerHTML = ` Após se transformar em SSJ2, o ki desse Sayajin passa a ser de ${seg}`
+
+    }
+    function calcular3(){
+        var ter = (Number(ki.value) *200 )
+    total.innerHTML = ` Após se transformar em SSJ3, o ki desse Sayajin passa a ser de ${ter}`
+
+    }
+
+
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<!-- 6. Crie um programa em HTML/JS o qual:
+a) Solicite um número
+b) Solicite outro número
+c) Ao clicar em "Calcular Raiz", exibe, abaixo, um texto como este:
+    a Bª raiz  de A dá X
+Onde A é o número informado em a) e B é o número informado em b)
+Ex: o usuário informou 25 e 2. Deve aparecer: "a 2ª raiz de 25 dá 5" -->
+
+<body>
+N° 1:<br><input id="um" type="number" placeholder="Insira um número" ><br><br>
+<button onclick="calcular()" >Calcular Raiz</button>
+<div id="msg" ></div>
+    
+</body>
+</html>
+<script>
+    function calcular() {
+        var resul = Math.sqrt(um.value)
+
+    }
+</script>

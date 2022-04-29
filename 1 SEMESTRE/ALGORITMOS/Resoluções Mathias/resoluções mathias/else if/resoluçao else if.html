@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <input type="number" autofocus placeholder="nota do aluno" id="nota_aluno"> <br>
+        <button onclick="classificar()">Classificar aluno</button>
+    </center>
+</body>
+</html>
+<script>
+    function classificar(){
+        var media = Number(nota_aluno.value);
+
+      if(media < 5){
+          alert('Aluno precisa de muita ajuda');
+      }else if (media <= 7){
+        alert('Aluno na média');
+      }else if (media <= 9.5){
+        alert('Aluno acima da média');
+      }else{
+        alert('aluno fora de serie');
+      }
+    }
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces "licitos"</title>
+</head>
+<body>
+    Quantidade de chocolates comprados <input type="number" id="chocho"><br>
+    <button onclick="valor()">Compra</button> <br>
+    <div id="div_chocolate"></div>
+</body>
+</html>  
+
+<script>
+    function valor(){
+        div_chocolate.innerHTML = ``;
+        var chocolate_N = Number(chocho.value);
+        
+        if (chocho.value <=12){div_chocolate.innerHTML = `o valor da sua compra foi de ${chocolate_N * 3.00}`;
+            
+        } else {div_chocolate.innerHTML = `o valor da sua compra foi de ${chocolate_N * 2.50}`;
+            
+        }
+    }
+</script>

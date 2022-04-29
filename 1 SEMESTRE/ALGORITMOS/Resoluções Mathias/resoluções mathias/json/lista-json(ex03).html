@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 3. Crie um programa que simule o uso de uma conta Poupança de banco do usuário.
+Ela deve ter as seguintes informações na tela:
+    Saldo: R$ 0.00
+    Depósitos: 0
+    Saques: 0
+Abaixo dessas informações, devem haver os botões: "Depositar 100" e "Sacar 20".
+Ao clicar no primeiro botão, o saldo na tela atualiza aumentando em 100 e o número de depósitos aumenta em 1.
+
+Ao clicar no segundo botão, o saldo na tela atualiza reduzindo em 20 e o número de saques aumenta em 1.
+
+É possível que o saldo fique negativo (azar do usuário ser gastador, né?). -->
+
+<center>
+    Saldo : R$ <b id="b_saldo">0.00</b><br>
+    Deposito: <b id="b_deposito">0</b><br>
+    Saques: <b id="b_saque">0</b><br>
+    <button onclick="deposito100()">Depositar 100</button>
+    <button onclick="saque20()">Sacar 20</button>
+</center>
+</body>
+</html>
+<script>
+    let S_banco ={
+        saldo : 0,
+        deposito: 0,
+        saque: 0
+    };
+
+    function deposito100(){
+        S_banco.saldo = S_banco.saldo + 100
+        S_banco.deposito++
+        b_saldo.innerHTML = S_banco.saldo.toFixed('2');
+        b_deposito.innerHTML = S_banco.deposito
+    }
+
+    function saque20(){
+      S_banco.saldo = S_banco.saldo- 20
+      S_banco.saque++
+      b_saldo.innerHTML = S_banco.saldo.toFixed('2');
+      b_saque.innerHTML = S_banco.saque;
+    }
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<!-- Crie um programa em HTML/JS o qual:
+a) Solicite o raio de uma circunferência
+b) Ao clicar num botão "Calcular Área",
+calcule e exiba a área da circunferência na tela, abaixo do botão (considere o PI como sendo 3,14) -->
+
+<body>
+    <h3>Circunferência</h3>
+Raio:<br><input id="raio" type="number" placeholder="Insira o raio de uma circunferência" ><br><br>
+<button onclick="analisar()" >Calcular Área</button>
+<div id="msg" ></div>
+
+</body>
+</html>
+<script>
+    function analisar() {
+        var raio_dois = Number (raio.value ** 2) 
+        var calc = 3.14 * raio_dois
+        msg.innerHTML = calc 
+    }
+</script>

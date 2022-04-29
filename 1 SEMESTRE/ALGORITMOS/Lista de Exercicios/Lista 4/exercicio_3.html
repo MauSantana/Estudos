@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    <!-- . Crie um programa em HTML/JS o qual:
+a) Solicite um número qualquer
+b) Ao clicar no botão "Exibir sua raiz quadrada", exiba abaixo do botão a raiz quadrada do número
+c) Ao clicar no botão "Exibir sua raiz cúbica", exiba abaixo do botão a raiz cúbica do número -->
+
+</head>
+<body>
+    <h3>Raiz</h3>
+N°:<br><input id="raiz" type="number" placeholder="Insira um número" ><br><br>
+<button onclick="analisar()" >Exibir sua raiz quadrada</button>
+<button onclick="verificar()" >Exibir sua raiz cúbica</button>
+<div id="msg" ></div>
+
+    
+</body>
+</html>
+<script>
+    function analisar() {
+    msg.innerHTML = Math.sqrt(raiz.value)
+    }
+    function verificar() {
+    msg.innerHTML = Math.cbrt(raiz.value)
+    }
+</script>

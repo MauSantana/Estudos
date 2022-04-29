@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- 5. Melhore a questão 3 de tal forma que um nome não pode conter a palavra 'fogo'. 
+    Se tiver, deve mostrar a frase "Com fogo não se brinca!" -->
+    <input type="text" id="nome_user" placeholder="tu nome aka" onkeyup="validar()">
+    <br>
+    <div id="div_resultado"></div>
+
+</body>
+
+</html>
+<script>
+    function validar() {
+        var validacao = nome_user.value;
+        validacao = validacao.trim();
+
+        if (validacao.length == 0) {
+            div_resultado.innerHTML = 'nome invalido'
+        }
+        else if (validacao.indexOf('fogo') >= 0 || validacao.indexOf('Fogo') >= 0) {
+            div_resultado.innerHTML = 'com fogo nao se brinca';
+        }
+        else {
+            div_resultado.innerHTML = 'nome ok'
+        }
+    }
+</script>

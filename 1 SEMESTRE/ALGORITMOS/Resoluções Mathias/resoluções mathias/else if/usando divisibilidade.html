@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <input type="text" id="num_divisao">
+        <button onclick="divisao()">É divisível por 7?</button>
+    </center>
+</body>
+</html>
+<script>
+var num = Number(num_divisao.value);
+// o numero so é divisivel se na divisão nao sobra nada
+function divisao(){
+    if(num % 7 == 0){
+    alert(`sim o numero ${num_divisao.value} é divisiel por 7`);
+    }else{
+        alert(`Não, não é`);
+    }
+}
+</script>

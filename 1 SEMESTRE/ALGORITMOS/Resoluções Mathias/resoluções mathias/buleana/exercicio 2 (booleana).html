@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <input type="text" placeholder="Email" id="login"> <br>
+        <input type="text" placeholder="senha" id="senha"> <br>
+        <button onclick="Sing_in()">Entrar</button>
+        <div id="div_resultado"></div>
+    </center>
+    
+</body>
+</html>
+<script>
+    function Sing_in(){
+
+        div_resultado.innerHTML = '';
+
+     var analisar_login = login.value == `aidimin`;
+     var analisar_senha = senha.value == `seinha`;
+
+     if (analisar_login && analisar_senha) {
+        div_resultado.innerHTML = `<span style="color: blue;">Usuário autenticado com sucesso!</span> <br>`;
+     } else {
+         if(!analisar_login){
+            div_resultado.innerHTML += `<span style="color: red;">Seu login está inválido!</span> <br>`;
+         }
+         if(!analisar_senha){
+            div_resultado.innerHTML += `<span style="color: red;">Sua senha está inválida!</span> <br>`;
+            alert('Entre em contato com o suporte para recuperar sua senha')
+         }
+     }
+    }
+</script>

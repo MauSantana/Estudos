@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+</head>
+<body>
+    <h3>Pizza Rãti</h3>
+    Distância: <br> <input id="dist" type="text" placeholder="Insira a distância da sua casa (km)" ><br><br>
+    <button onclick="analisar()" >Verificar disponibilidade</button>
+    <div id="msg" ></div>
+
+</body>
+</html>
+<script>
+    function analisar() {
+        var resul = Number (dist.value)
+        if (resul >=25) {
+        msg.innerHTML = `A Pizza Rãti não entrega neste endereço!`    
+        }
+        else if (resul >5 && resul < 25 ) {
+        msg.innerHTML = `A sua pizza será entregue, porém o valor de entrega é de R$ 25,00`  
+        }
+        else {
+        msg.innerHTML = `A sua pizza será entregue e não custará nada para você :)`  
+        }      
+    }
+</script>

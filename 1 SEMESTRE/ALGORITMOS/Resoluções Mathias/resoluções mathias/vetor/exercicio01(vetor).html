@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1. Crie um programa em HTML/JS o qual:
+
+a) Usuário vai cadastrando os nomes de seus filmes favoritos. Digita num campo e clica em "Cadastrar"
+
+b) Ele pode cadastrar quantos filmes quiser
+
+c) Na medida que vai cadastrando, deve ser exibido ou atualizado um "painel" como neste exemplo:
+
+
+
+  Seu filme favorito: 50 tons de cinza
+
+  Seu 3º filme favorito: A era do gelo 1
+
+  Total de filmes cadastrados: 5
+
+
+
+OBS: no "3º filme", caso não tenham sido cadastrados ainda 3 filmes, exibir "Ainda não existe".
+
+OBS: o "filme favorito" é o primeiro cadastrado -->
+    <h2>ponha aqui teu filme favorito</h2>
+    <input type="text" id="inp_movie" placeholder="filme favorito"><br>
+    <button onclick="cadastro()">cadastrar</button>
+
+    <div id="div_painel" style="display: none;">
+        Seu filme favorito: <span id="span_fav"></span>
+        <br>
+        Seu 3º filme favorito: <span id="span_fav3"></span>
+        <br>
+        Total de filmes cadastrados: <span id="filme_cad"></span>
+    </div>
+</body>
+
+</html>
+<script>
+    let filmes = [];
+
+    function cadastro() {
+        filmes.push(inp_movie.value);
+        document.getElementById("div_painel").style.display = 'block';
+
+        span_fav.innerHTML = filmes[0];
+
+        if (filmes.length >= 3) {
+            span_fav3.innerHTML = filmes[2];
+        }
+        else {
+            span_fav3.innerHTML = `ainda nao existe`;
+        }
+
+        filme_cad.innerHTML = filmes.length;
+    }
+</script>
