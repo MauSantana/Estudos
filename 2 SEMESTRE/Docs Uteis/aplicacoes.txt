@@ -1,0 +1,23 @@
+O que vou precisar para o novo not
+
+MySQL workbench **********
+VsCode
+Netbeans + JDK
+WSL
+Hyper V
+Node.js
+Pacote office
+Angular.js
+Webex
+Zoom
+Git bash
+Br modelo
+
+
+URL para favoritar
+
+Canvas 
+Draw.io
+Trello
+Moodle 
+Figma

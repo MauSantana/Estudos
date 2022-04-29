@@ -1,0 +1,37 @@
+Canvas de projeto (Ferramenta de planejamento)
+* Quadro dividido em blocos
+* Descrevem as etapas para realização do projeto
+
+justificatica (Listar problemas)
+*Ferramentas ociosas por falta de conhecimento
+*Investimento do banco em ferramentas sem retorno;
+* Não explorar as funções das ferramentas
+
+objetivo
+* Garantir conhecimento dos funcionarios para uso das ferramentas
+* Melhorar a qualificação profissional
+* Fazer isso de forma simples e intuitiva
+* Garantir retorno de produtividade
+
+Beneficios (Quais são os ganhos?)
+* Funcionarios especializados 
+* Retorno de investimentos 
+* Melhorar no desenvolvimentso e entregas
+
+caracteristicas (detalhamento do produto)
+* benchmarking das aplicações 
+* tutoriais 
+* feedback dos funcionarios 
+* Estudos sobre as ferramentas do banco 
+
+escopo (o que será será feito)
+Mapeamento de ferramentas usadas
+estudo dos integrantes sobre as ferramentas do banc
+produzir os tutoriais 
+criação de forum
+
+
+
+não escopo ( não será feito)
+Divulgar tutoriais e workshops
+Divulgação de Ferramentas
