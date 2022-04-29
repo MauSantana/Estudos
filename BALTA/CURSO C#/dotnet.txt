@@ -1,0 +1,16 @@
+*.NET*
+
+*CLI
+
+*Definições
+- Sigla para Command LAINE Interface
+Interface de linha de comando
+Comando adicionados ao nosso terminal
+
+- Definidos pelo comando dotnet
+dotnet -version (Verifica versão atual)
+dotnet --list-sdks (Lista os SDKs instalados)
+dotnet --list-runtimes (Lista os Runtimes instalados)
+dotnet help (Exibe ajuda/ Lista de comandos disponiveis)
+
+

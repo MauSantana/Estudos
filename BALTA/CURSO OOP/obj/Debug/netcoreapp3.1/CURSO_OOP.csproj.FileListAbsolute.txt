@@ -1,0 +1,13 @@
+C:\Users\Mauri\Documents\CURSO_OOP\bin\Debug\netcoreapp3.1\CURSO_OOP.exe
+C:\Users\Mauri\Documents\CURSO_OOP\bin\Debug\netcoreapp3.1\CURSO_OOP.deps.json
+C:\Users\Mauri\Documents\CURSO_OOP\bin\Debug\netcoreapp3.1\CURSO_OOP.runtimeconfig.json
+C:\Users\Mauri\Documents\CURSO_OOP\bin\Debug\netcoreapp3.1\CURSO_OOP.runtimeconfig.dev.json
+C:\Users\Mauri\Documents\CURSO_OOP\bin\Debug\netcoreapp3.1\CURSO_OOP.dll
+C:\Users\Mauri\Documents\CURSO_OOP\bin\Debug\netcoreapp3.1\CURSO_OOP.pdb
+C:\Users\Mauri\Documents\CURSO_OOP\obj\Debug\netcoreapp3.1\CURSO_OOP.csprojAssemblyReference.cache
+C:\Users\Mauri\Documents\CURSO_OOP\obj\Debug\netcoreapp3.1\CURSO_OOP.AssemblyInfoInputs.cache
+C:\Users\Mauri\Documents\CURSO_OOP\obj\Debug\netcoreapp3.1\CURSO_OOP.AssemblyInfo.cs
+C:\Users\Mauri\Documents\CURSO_OOP\obj\Debug\netcoreapp3.1\CURSO_OOP.csproj.CoreCompileInputs.cache
+C:\Users\Mauri\Documents\CURSO_OOP\obj\Debug\netcoreapp3.1\CURSO_OOP.dll
+C:\Users\Mauri\Documents\CURSO_OOP\obj\Debug\netcoreapp3.1\CURSO_OOP.pdb
+C:\Users\Mauri\Documents\CURSO_OOP\obj\Debug\netcoreapp3.1\CURSO_OOP.genruntimeconfig.cache

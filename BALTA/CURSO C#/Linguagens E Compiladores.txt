@@ -1,0 +1,31 @@
+*LINGUAGENS E COMPILADORES"
+
+* Linguagem de programação
+(Este processo de "tradução" é conhecido como compilação)
+- Existem varias linguagens de programação
+- Cada uma com seu compilador
+- Cada compilador trabalha de uma forma
+
+*COMPILADOR*
+- Agente que executa a compilação, que é a tranformação do texto que escrevemos para binário (0 e 1)
+
+* Baixo e alto nível
+- Baixo nivel: estão mais próximas da linguagem utilizada pelo computador e contam com comandos menos intuitivos para o nosso padrão de idioma.
+EX: Assembly
+- Alto nivel: é aquela cuja sintaxe é voltada para o entendimento humano. Abstraem conceitos voltados para a máquina e sintetizam comandos.
+EX: JAVA, C#, Ruby, Python, JavaScript
+
+* Linguagem compilada e interpretada
+- Compilada: A compilação gera um outro código que será posteriormente usado (executado) por um ambiente que entenda o seu funcionamento. Pode ser uma máquina virtual ou uma máquina real.
+EX: C#, JAVA
+- Interpretada: A interpretação executa o código analisado.
+EX: JavaScript
+
+* Tipagem de dados
+- Fortemente tipada: seria aquela em que os objetos/variáveis tem um tipo bem definido e que precisa ser informado no momento de sua declaração.
+EX: JAVA, C#
+- Fracamente tipada: significa que ao se declarar uma variável o seu tipo de conteúdo não precisa ser declarado
+EX:JavaScript
+
+*Tipo de dado*
+Define o formato da informação

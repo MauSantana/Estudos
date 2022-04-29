@@ -1,0 +1,179 @@
+*FRAMEWORKS*
+
+*Definições
+- Framework é uma estrutura, um alicerce 
+Um conjunto de bibliotecas
+- Usamos como base para construir nossas aplicações
+Para não precisar fazer tudo, começar do zero
+- Conceito existente em diversas tecnologias
+
+*.NET 
+
+*Definições
+- Trazer recursos comuns já prontos
+Itens do dia a dia
+Escrita de arquivo em disco por exemplo
+Acesso a dados
+- Validados e testados
+- Nos poupam muito tempo
+- Não vale a pena começar sem um
+
+*.NET Framework
+
+*Definições
+- C# é a linguagem
+- O framework se chama .NET
+- Teve sua primeira versão em meados de 2001
+Chamado de .NET framework
+- Recebeu as versões 1.0, 1.1, 2.0, 3.0, 4.x(Atualmente)
+- Pode ser instalado Side-by-Side
+- Compativel somente com Windows
+- Considerado legado
+
+* .NET Core
+
+*Defeinições
+- Versão moderna do .NET Framework
+- Lançado em meados de 2015
+- Veio para suportar outros SOs como Linux e Mac
+- Suas primeiras versões continham apenas o básico
+Core significa núcleo, ou seja, o essencial
+Mudar um framework usado por milhões não é fácil
+Foi totalmente reescrito
+Ainda assim com otima retro compatibilidade
+- Pode ser instalado Side-by-Side
+- Versão 3.1 está bem estável
+- Recomendação atual de Microsoft
+- Muitas meelhorias de performance
+- Versões 1.0, 1.1, 2.0, 2.1, 3.0, 3.1
+
+* .NET Standard
+
+*Definições
+- .NET Framework e .NET Core coexistem
+Podem ser instalados juntos
+Podem ser utilizados no mesmo projeto
+
+
+			.Net Standard 
+      			      ⬇️
+      			      ⬇️
+
+Sistema Legado .Net framework + Sistema Novo.Net Core
+
+- Não é um Framework, apenas um contrato
+chamamos de Surface API
+- É a intersecção entre os frameworks
+- Garante que tudo que escrevemos será compatível com ambos frameworks
+
+* .NET 5 - Futuro*
+
+*Definições
+- Unificação dos Frameworks 
+- .NET Core chegou ao .NET Framework em nível de conteúdo
+- Não faz mais sentido ter dois frameworks
+- Lançado nov/2020		           
+
+Lançamentos
+*Definições
+-.Net Frameworks
+Não possuia uma data de lançamento programada
+- .NET 5 e futuros
+Lançamentos anuais
+
+*LTS*
+*Definições
+- Sigla para Long Term Support
+Suporte de longa data
+- .Net Framework
+Todos eram
+- .Net Core 
+Versões co final 1
+1.1, 2.1, 3.1...
+- .NET e futuros
+- Versões maiores (Major Version)
+- Opte sempre por LTS para projetos em produção
+
+*VERSIONAMENTO*
+
+*Definições
+- Versão Semântica
+- Dividida em fases
+Alpha, Beta, Release Candidate, Final
+- Dividida em três partes
+Major, Minor, Patch
+
+-15.8.2
+- MAJOR (15)
+Pode conter incompatibilidade com versões anteriores
+Chamadas de Breaking Changes
+- MINOR (8)
+Possui mudanças mas é totalmente compatível com versões anteriores
+- PATCH (2)
+Correções de bugs e outros itens simples
+
+- Alpha
+Ainda não sabe como vão ser as coisas
+Muito ainda pode mudar
+- Beta
+Já tem ideia de estrutura
+As coisas ainda podem mudar
+- Release Candidate
+Candidato a versão final
+- Final
+Versão Final
+
+
+- Podem ser usadas anotações com:
+Alpha => 0.0.1-a1
+Beta => 0.0.2-b1
+Release Candidate => 1.0.0-rc1
+Final =>1.0.0
+
+- Normalmente alpha e beta tem versões menores que 1.0.0
+
+*RUNTIME*
+
+*Definições
+- Necessário para executar aplicações
+- São divididos em 3
+ASP.NET´para aplicações Web
+Desktop para aplicações Desktop
+.NET Core para qualquer outra aplicação
+	Console, Batch, Serviço
+	Não possui uma interface por exemplo
+- Também possui versões
+A versão tem que ser compativel com a versão utilizada durante a codificação
+- Usado somente para distribuir as aplicações
+Apenas executa
+- Tamanho menor, otimizado para execução
+
+*SDK*
+- Sigla para Software Developmente Kit
+Kit para desenvolvimento de software 
+- Possui tudo que precisamos para criar aplicações
+- Já vem com o Runtime integrado
+- Não devemos utilizar em produção
+Para executar precisamos apenas do Runtime
+- É maior que o Runtime
+Já que vem com tudo que precisamos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

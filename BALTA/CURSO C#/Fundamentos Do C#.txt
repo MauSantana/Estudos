@@ -1,0 +1,47 @@
+FUNDAMENTOS DO C#
+
+*Definições
+- Linguagem de programação (tipada, compilada e gerenciada)
+- Criada por Anders Hejlsberg (Em meados de 2001)
+- Principal linguagem da Microsoft
+
+*Código Gerenciado
+- Significa que sua execução depende de um gerenciador
+- Também conhecido como Runtime
+No caso do C# esse Runtime de chama CLR ou CLR Runtime
+- Gerencia memória, segurança, entre outros recursoso básicos
+
+*CLR*
+- É a sigla para Commom Language Runtime ou gerenciador
+de linguagem comum.
+
+Compilação e Gerenciamento 
+
+- A Microsoft possui outras linguagens como VB.NET, F# e até
+Cobol.Net
+- Todas elas precisam ser mantidas (Manutenção de código,
+correções de bugs e afins)
+- Quando e ecossistema de desenvolvimento Microsoft foi
+criado ela foi pensado desta forma (Suporte a varias linguagens)
+- Se cada linguagem tiver um gerenciador, isto seria muito complicado
+- Compiladores ficam separados
+- Um para cada linguagem (ou mais de uma linguagem)
+-A compilação inicial gera um codigo intermediário (Intermediate Language - IL)
+
+*IL (Intermediate Language)* 
+Codigo C#, VB.NET, F#, Cobol.Net >> Intermediate Language >> Código Binário
+
+Embora as compilações sejam diferentes:
+- O gerenciamento é igual
+- Alocaçao de memória 
+- Execução de instruções no processador
+O CLR recebe um código e compila ele para IL (Codigo C#, VB.NET, F#, Cobol.Net)
+Podemos ter arquivo C# e VB.NET no mesmo projeto
+- Nunca no mesmo arquivo
+O resultado da compilação do IL é sempre o mesmo
+
+O processo de conversão do IL para binário é conhecido como JIT
+
+*JIT*
+- Just In Time
+
