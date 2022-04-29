@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Exercicio30_03</string>
+    <string name="comprar_fruta">Comprar fruta</string>
+    <string name="comprar_legume">Comprar legume</string>
+    <string name="mensagem_fruta">
+        Comprou mais uma fruta
+    </string>
+    <string name="mensagem_legume">
+        Comprou mais um legume
+    </string>
+    <string name="mensagem_com_parametro">
+        O total da compra é %1$.2f
+    </string>
+</resources>

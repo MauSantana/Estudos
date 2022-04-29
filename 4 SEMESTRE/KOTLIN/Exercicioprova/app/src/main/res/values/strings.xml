@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Exercicio-prova</string>
+    <string name="primeiroTime">Digite o nome de um time</string>
+    <string name="segundoTime">Digite o nome de outro time</string>
+    <string name="timeUm">
+        Gol do TIME %s
+    </string>
+    <string name="timeDois">
+        Gol do TIME %s
+    </string>
+</resources>
