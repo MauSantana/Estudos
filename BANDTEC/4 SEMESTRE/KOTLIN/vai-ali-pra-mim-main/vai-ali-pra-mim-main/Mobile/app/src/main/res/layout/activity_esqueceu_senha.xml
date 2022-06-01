@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tela"
+    tools:context=".telas.EsqueceuSenha">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/img_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_menu"
+                android:onClick="indoMenu" />
+
+            <ImageButton
+                android:id="@+id/img_voltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_voltar" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="530dp"
+            android:background="@drawable/bg_cinza_tl"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/baloo"
+                android:text="Esqueci a senha"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/baloo"
+                android:text="Insira seu email e receberá na caixa de entrada um email com as instruções para  alteração de sua  senha ."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/baloo"
+                android:text="Email:"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                tools:ignore="MissingConstraints" />
+
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/baloo"
+                android:hint="Digite seu Email"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input"
+                android:drawableStart="@drawable/ic_email"
+                android:paddingStart="12dp"
+                android:inputType="textEmailAddress"
+                app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+            <ImageButton
+                android:id="@+id/bt_confirmar"
+                android:layout_width="268dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/btn_enviar"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tela"
+    tools:context=".telas.TelaPostar">
+    
+    <ImageView
+        android:id="@+id/vapm"
+        android:layout_width="130dp"
+        android:layout_height="57dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="676dp"
+        android:src="@drawable/vapm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageButton
+        android:id="@+id/bt_menu"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="684dp"
+        android:background="@color/tela"
+        android:onClick="irParaMenu"
+        android:src="@drawable/menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="600dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/postar"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="380dp"
+        android:layout_height="560dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/style_view_telas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="560dp"
+            android:layout_marginBottom="52dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/baloo"
+                android:text="@string/nome_estab"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/nome_estabelecimento"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/style_view"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:hint="@string/exemp_nomeEstab"
+                android:inputType="textLongMessage"
+                android:textAlignment="center"
+                android:textColorLink="@color/black"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/baloo"
+                android:text="@string/quant_itens"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                tools:ignore="MissingConstraints" />
+
+
+            <EditText
+                android:id="@+id/qtd_alimentos"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/style_view"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:hint="@string/exemp_quantIntens"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColorLink="@color/black"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/baloo"
+                android:text="@string/peso_itens"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+            <EditText
+                android:id="@+id/peso_alimentos"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/style_view"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:hint="@string/exemp_peso"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColorLink="@color/black"
+                android:textSize="25dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/baloo"
+                android:text="@string/taxa_entr"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+            <EditText
+                android:id="@+id/et_taxa_entrega"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/style_view"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:hint="@string/exemp_taxa"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColorLink="@color/black"
+                android:textSize="25dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="390dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/baloo"
+                android:layout_marginTop="30dp"
+                android:text="@string/temp_comp"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/bt_confirmarTempo"
+                android:layout_width="268dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:onClick="showTimePickerDialog"
+                android:src="@drawable/btn_escolher_tempo" />
+
+            <TextView
+                android:id="@+id/tv_tempo_estimado"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:background="@drawable/style_view"
+                android:ems="15"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/baloo"
+                android:hint="@string/exemp_temp"
+                android:inputType="datetime"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/baloo"
+                android:text="@string/data_horaReal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/bt_calendario"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="120dp"
+                android:background="@drawable/style_view"
+                android:onClick="irCalendario"
+                android:src="@drawable/calendario_imagem"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+
+            <ImageButton
+                android:id="@+id/bt_confirmarPostar"
+                android:layout_width="268dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="60dp"
+                android:onClick="postar"
+                android:src="@drawable/confirmar"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

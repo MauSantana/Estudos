@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_edit"
+            android:icon="@drawable/ic_editarp"
+            android:title="@string/edit_perf" />
+
+
+        <item
+            android:id="@+id/nav_conf"
+            android:icon="@drawable/ic_conf"
+            android:title="@string/conf" />
+
+
+        <item
+            android:id="@+id/nav_term"
+            android:icon="@drawable/ic_termo"
+            android:title="@string/term" />
+
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_faq"
+            android:title="@string/faq" />
+
+        <item
+            android:id="@+id/nav_log"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+
+        <item
+            android:id="@+id/nav_aval"
+            android:icon="@drawable/ic_avaliacao"
+            android:title="@string/aval" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="@string/perfil">
+            <menu>
+                <item
+                    android:id="@+id/nav_test"
+                    android:icon="@drawable/ic_avaliacao"
+                    android:title="@string/aval" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Test">
+        <menu>
+            <item
+                android:id="@+id/test2"
+                android:title="test2"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container-parent">
+        <div class="container">
+
+            <div class="barra-lateral" id="barraLateral" onkeydown="acionarReconhecimentoVozPorTecla()"
+                onclick="acionarReconhecimentoVoz()" tabindex="0">
+                <img src="../../assets/loginPage/microphone.png" alt="">
+            </div>
+            <img class="logo" src="../../assets/loginPage/logo.png" alt="Logo: Vai ali pra mim">
+
+            <img class="formas forma-nordeste" src="../../loginPage/assets/forma-nordeste.png" alt="">
+            <div class="login-container">
+                <div class="login-container-items">
+                    <div class="login-label" for="">Login</div>
+                    <div class="login-credenciais-label">E-mail:</div>
+
+                    <input class="input" id="input-email" type="text" onkeydown="falarFraseEmail()" onfocus="falarFraseEmailOnFocus()"
+                        placeholder="Insira seu email aqui...">
+                    <div class="login-credenciais-label">Senha:</div>
+
+                    <input class="input" id="input-password" type="password" onkeydown="falarFraseSenha()"
+                        onfocus="falarFraseSenhaOnFocus()" placeholder="Insira sua senha aqui...">
+
+                    <button id="btn-entrar" onkeydown="pressionarEnter()" onclick="login()">
+                        Entrar
+                    </button>
+
+                </div>
+            </div>
+
+            <img class="formas forma-central" src="../../assets/loginPage/forma-central.jpg" alt="">
+            <img class="formas forma-sudeste" src="../../assets/loginPage/forma-sudeste.png" alt="">
+            <img class="formas forma-sudoeste" src="../../assets/loginPage/forma-sudoeste.png" alt="">
+
+        </div>
+    </div>
+</body>
+
+</html>

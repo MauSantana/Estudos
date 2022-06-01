@@ -1,0 +1,181 @@
+.container-DashEntregador {
+  width: 100%;
+  max-width: 1580px;
+  margin: 35px auto;
+  }
+
+.container-DashEntregador header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .container-DashEntregador header button{
+    background-color: #037EA3;
+    border-radius: 20px;
+    transition: filter 0.2s;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 60px;
+    font-size: 25px !important;
+    vertical-align: middle;
+  }
+
+  #botao-menu svg{
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+
+.container-DashEntregador aside {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 20vw;
+    height: 40vh;
+}
+
+.container-DashEntregador aside img {
+    width: 12vw;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.container-DashEntregador aside img:hover{
+    transform: scale(1.1);
+}
+
+.user span + button{
+    background-color: #F09435;
+    color: white;
+    border: none;
+    width: 20vw;
+    height: 8vh;
+    border-radius: 20px;
+    font-size: 35px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    margin-left: 35%;
+}
+
+.user svg{
+  vertical-align: middle;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.user #nomeUser{
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+
+
+.feed ul{
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    list-style: none;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 auto;   
+  }
+  
+  .feed li {
+    background: linear-gradient(180deg, rgba(248, 85, 42, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #FFFEFE;;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+    .feed ul li strong {
+      font-size: 22px;
+      margin-left: 20%;
+    }
+  
+    .feed ul li p {
+      color: #737380;
+      line-height: 25px;
+      font-size: 19px;
+      margin-left: 20%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  
+    .feed ul li #iconFeed{
+      position: absolute;
+    }
+
+    .feed h1{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+  .swal2-popup {
+    border-radius: 80px !important;
+    /* background-image: url("../../assets/back-pop-entr.png");
+    background-size: cover; */
+  }
+
+  #swal2-content {
+      list-style: none;
+  }
+
+@media only screen and (max-device-width: 900px) {
+    .container-DashEntregador aside img {width: 14vw;}
+    
+  }
+
+  .icon-logout{
+    margin-right: -2.0vw;
+  }
+  
+  .item-logout{
+    margin-left: -2.0vw;
+  }
+
+  .sem-solicitacao-messagem{
+    font-size: 1.5vw;
+    color: black;
+    display: grid;
+    justify-self: center;
+    margin-top: 3%;
+    margin-left: 35%;
+  }
+
+  .btn-modal-info-solicitante{
+    background-color: #F09435;
+    color: white;
+    border: none;
+    width: 20vw;
+    height: 8vh;
+    border-radius: 20px;
+    font-size: 1.5vw;
+    margin-bottom: 8%;
+    margin-top: 5%;
+    margin-left: 23%;
+  }
+
+  .btn-modal-resposta-post{
+    background-color:  #037EA3;
+    color: white;
+    border: none;
+    width: 20vw;
+    height: 8vh;
+    border-radius: 20px;
+    font-size: 1.5vw;
+    margin-bottom: 8%;
+    margin-top: 5%;
+    margin-left: 23%;
+  }

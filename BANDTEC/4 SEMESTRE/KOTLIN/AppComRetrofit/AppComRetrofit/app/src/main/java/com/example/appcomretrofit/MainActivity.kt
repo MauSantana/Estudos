@@ -132,7 +132,8 @@ class   MainActivity : AppCompatActivity() {
             val prefs = getSharedPreferences("ACESSO", Context.MODE_PRIVATE)
             val token = prefs.getString("jwt_token", "")
 
-            retrofit.getById(id, token).enqueue(object : Callback<Filme> {
+            retrofit.getById(id, token)
+                .enqueue(object : Callback<Filme> {
                 override fun onResponse(call: Call<Filme>, response: Response<Filme>) {
                     if (response.isSuccessful) {
                         llContainer.removeAllViews()

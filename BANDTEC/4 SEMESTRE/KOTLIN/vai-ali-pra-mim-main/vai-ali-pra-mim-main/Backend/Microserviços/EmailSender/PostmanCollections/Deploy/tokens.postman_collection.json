@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "c3d71be7-f175-4da4-802c-c5c364b428a2",
+		"name": "tokens",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TRAZER TODOS OS TOKENS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://vapm-emailsender.herokuapp.com/token",
+					"protocol": "https",
+					"host": [
+						"vapm-emailsender",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CRIAR UM NOVO TOKEN PARA UM EMAIL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"teste@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vapm-emailsender.herokuapp.com/token365",
+					"protocol": "https",
+					"host": [
+						"vapm-emailsender",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"token365"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FAZER VERIFICACAO DE CÓDIGO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"teste@gmail.com\",\r\n    \"code\": 4369\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vapm-emailsender.herokuapp.com/token/codeVerification",
+					"protocol": "https",
+					"host": [
+						"vapm-emailsender",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"token",
+						"codeVerification"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

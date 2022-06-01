@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:id="@+id/ll_balde_post"
+        android:layout_width="340dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/style_view_baldes">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/foto_perfil_branca" />
+
+        <TextView
+            android:id="@+id/nome_entregador"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/baloo"
+            android:text="Fábio da Cunha"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/data_hora_tarefa"
+            android:layout_width="121dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/baloo"
+            android:text="23/02 18h36"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-260dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/estrela_amarela" />
+
+        <TextView
+            android:id="@+id/avaliacao"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/baloo"
+            android:text="4,2"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/local_tarefa"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-155dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/baloo"
+            android:text="Mercado Extra"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_status_post"
+                android:textColor="@android:color/white"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-290dp"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/baloo"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:textSize="23dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
