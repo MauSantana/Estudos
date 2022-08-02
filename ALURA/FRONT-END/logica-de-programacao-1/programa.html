@@ -1,10 +1,48 @@
 <meta charset="UTF-8">
 
 <script>
-    document.write(" idade do maumau é");
+
+    var ano = 2022
+    var puloLinha = "<br>"
+
+    function pulaLinha() {
+        document.write("<br>");
+        
+    }
+
+    function pulaDuasLinhas() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostrar(frase){
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    document.write("idade do maumau é " + (ano - 2001) + " anos");
+
+    // document.write(puloLinha);
+    // document.write(puloLinha);
+    // document.write(puloLinha);
+    // document.write(puloLinha);
+    // document.write(puloLinha);
+
+    pulaLinha();
+
     document.write("<br> 20");
     document.write("<br> 20" + "19");
     document.write("<br>" + 20);
     document.write("<br> 20" + 20);
     document.write("<br>" + 20 + 20);
+
+    pulaDuasLinhas();
+
+    mostrar("idade do joao é " + (ano - 2003) + " anos");
+    mostrar("idade da maria é " + (ano - 1987) + " anos");
+    mostrar("idade do maumau é " + (ano - 2001) + " anos");
+
+
+
 </script>
