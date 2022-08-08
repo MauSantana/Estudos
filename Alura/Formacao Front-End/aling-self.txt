@@ -1,0 +1,4 @@
+align-self. Essa propriedade é aplicada ao flex item e faz com que ele se alinhe individualmente.
+
+Lembra da propriedade align-items que colocávamos no flex container?
+O align-self faz a mesma coisa, só que alinha um único elemento e é colocada no flex item.
