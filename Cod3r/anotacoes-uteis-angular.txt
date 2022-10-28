@@ -1,0 +1,1 @@
+* dentro de declarations são declarados pipes, componentes e diretivas *

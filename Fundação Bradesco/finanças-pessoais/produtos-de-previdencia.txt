@@ -1,0 +1,10 @@
+PRODUTOS DE PREVIDENCIA
+
+-PGBL
+Indicado se você faz a declaração do Imposto de Renda no modelo completo,
+pois permite deduzir contribuições de até 12% da Renda Bruta Anual.
+No resgate, o IR incide sobre o valor total resgatado.
+
+-VGBL
+Indicado para quem faz a declaração do Imposto de Renda
+no modelo simplificado. No resgate, o IR incide sobre o rendimento bruto.

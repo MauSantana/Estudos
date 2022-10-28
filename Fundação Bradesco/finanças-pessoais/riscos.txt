@@ -1,0 +1,11 @@
+RISCOS
+
+-risco de mercado
+Ocilações de bolsa de valores, mercado de taxa de juros e mercado de câmbio dentro e fora do país
+Refletem no preço dos ativos
+
+-risco de crédito
+Empresas ou banco nçao cumprem suas obrigações contratuais
+
+-risco de liquidez
+Caso o título seja negociado no mercado por um preço muito abaixo do esperado, você pode correr o risco.

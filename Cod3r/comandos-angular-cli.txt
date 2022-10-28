@@ -1,0 +1,46 @@
+*COMANDOS ANGULAR CLI*
+
+-instalação
+npm install -g @angular/cli
+
+-criação do projeto
+ng new nome-do-projeto
+
+-criação do projeto com arquivos de rotas
+ng new hello-world --routing
+
+-criação de projeto simples para fins de testes
+ng new hello-world --minimal=true
+
+-criação de componente
+ng g c nome-do-componente
+
+-criação de diretivas
+ng g d nome-da-diretiva
+
+-criação de pipes
+ng g p nome-do-filtro
+
+-criaçao de services
+ng g service nome-do-servico
+
+-criação de modulos
+ng g module nome-do-modulo
+
+-verificar versão do NodeJs
+node -v
+
+-verificar versão do TypScript 
+tsc -v
+
+-verificar versão do Angular CLI
+ng version
+
+-testar o app localmente
+ng serve
+
+-gerar build em produção
+ng build --prod
+
+-gerar build em desenvolvimento
+ng build --dev
