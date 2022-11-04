@@ -1,505 +1,788 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="IMG/rappeer.png">   <!-- imagem linkada da parte de "guia" -->
+    <link rel="shortcut icon" href="IMG/rappeer.png"> <!-- imagem linkada da parte de "guia" -->
     <link rel="stylesheet" href="CSS/style_tela_inicial.css">
 
     <title>RAP Area</title>
 </head>
+
 <body>
 
-<div class="header">
-<div class="container" >
-<div class="nav" >
-    <a href="index.html"><img src="IMG/rappeer.png" id="logo" alt="Logo fundo preto"></a>
+    <div class="header">
+        <div class="container">
+            <div class="nav">
+                <a href="index.html"><img src="IMG/rappeer.png" id="logo" alt="Logo fundo preto"></a>
 
-<ul>
-    <li><a href="meu_cadastro.html"> <button type="button" class="botao" >Assine já</button></a></li>
-    <li><a href="menu_conteudo.html">RAP AREA</a></li>
+                <ul>
+                    <li><a href="meu_cadastro.html"> <button type="button" class="botao">Assine já</button></a></li>
+                    <li><a href="menu_conteudo.html">RAP AREA</a></li>
 
-    <a href="login.html"><img id="icone" src="IMG/rap.png" alt="icone login"></a>
+                    <a href="login.html"><img id="icone" src="IMG/rap.png" alt="icone login"></a>
 
-</ul>
-</div>
-
-</div>
-
-</div>
-<div class="borda"></div>
-<div class="borda_dois"></div>
-<div class="imagem_fundo"> 
-    <div class="container" >
-        <br><br><br>
-    <center><div class="texto_inicio">
-    <audio src=""></audio>
-    <h1>Seja bem vindo ao RAP AREA  🎶</h1>
-    <br>
-    <p> Curta suas músicas de RAP favoritas com um serviço completo e
-     interativo com um preço que cabe no seu bolso. <br><br>
-     <b>  Curiosidades, biografias, notícias, playlists, discografia, Quiz divertido e muito mais...</b></p></div>
-     <br><br><br>
-    <b id="negrito_inicio"> Ta esperando o que ? Faça parte dessa comunidade também.</b>
-    <br><br><br></center>
-     <a href="meu_cadastro.html"> <button type="button" id="button_exp">Experimente 30 dias grátis</button></a>
-    </div>
-</div>
-<div class="borda_dois"></div>
-<div class="borda"></div>
-<div class="borda_dois"></div>
-
-<div class="fundo_dois">
-
-<div class="container">
-<h1>Album completo dos seus artistas favoritos 📀</h1>
-<h2 id="nacional_text" >Nacionais  ⬇ <b id="internacional_text" >Internacionais  ⬇</b></h2>
-
-<div class="text_fundo_dois" >  História do RAP   ✔<br><br>
-      Biografia dos artistas   ✔<br><br>
-      Quiz divertida sobre RAP    ✔<br><br>
-        Discografia dos artistas   ✔</div>
-
-
-<div class="album_nacional">
-
- <!-- 1 FAIXAS DO ALBUM DJONGA -->
-<div id="faixas_djonga" style="display: none;" >
-<table border="2" id="table_djonga">
-    <img onclick="x_clic()" id="x" src="IMG/x_um.png"alt="">
-    <h4 id="h3_djonga" >Djonga - O menino que queria ser Deus</h4>
-    <img id="djo" src="IMG/djonga_2.png" alt="">
-   <thead> <tr>
-        <th>Faixa</th> <th>Música</th> <th>Duração</th>
-    </tr></thead>
-    <tbody><tr>
-        <td>1</td> <td>ATÍPICO</td> <td>3:20</td>
-    </tr>
-    <tr>
-        <td>2</td> <td>JUNHO DE 94</td> <td>5:29</td>
-    </tr>    
-        <td>3</td> <td>UFA</td> <td>5:52</td>
-    </tr>    
-        <td>4</td> <td>1010</td> <td>3:58</td>
-    </tr>    
-        <td>5</td> <td>SOLTO</td> <td>3:39</td>
-    </tr>    
-        <td>6</td> <td>CANÇÃO PRO MEU FILHO</td> <td>3:32</td>
-    </tr>    
-        <td>7</td> <td>CORRA</td> <td>3:40</td>
-    </tr>   
-        <td>8</td> <td>ESTOURO</td> <td>3:32</td>
-    </tr>    
-        <td>9</td> <td>DE LÁ</td> <td>2:46</td>
-    </tr>  </tbody>  
-        <tfoot><td>10</td> <td>ETERNO</td> <td>3:36</td>
-    </tr></tfoot>
-</table>
-</div>
-
-<!-- 2 FAIXAS DO ALBUM CORUJA -->
-<div id="faixas_coruja"  style="display: none;" >
-    <table border="2" id="table_coruja" >
-        <img onclick="x_clic()" id="x" src="IMG/x_um.png"alt="">
-        <h4 id="h3_coruja" >Coruja BC1 - Psicodelic</h4>
-        <img id="cor" src="IMG/imagem_certa_coruja.jpg" alt="">
-       <thead> <tr>
-            <th>Faixa</th> <th>Música</th> <th>Duração</th>
-        </tr></thead>
-        <tbody><tr>
-            <td>1</td> <td>LAGRIMAS DE ODÉ</td> <td>4:15</td>
-        </tr>
-        <tr>
-            <td>2</td> <td>FOGO</td> <td>3:29</td>
-        </tr>    
-            <td>3</td> <td>APÓCRIFO</td> <td>5:00</td>
-        </tr>    
-            <td>4</td> <td>GUSTAVO</td> <td>4:51</td>
-        </tr>    
-            <td>5</td> <td>INTERLÚDIO</td> <td>1:56</td>
-        </tr>    
-            <td>6</td> <td>MEU ANJO</td> <td>3:02</td>
-        </tr>    
-            <td>7</td> <td>DOPAMINA</td> <td>2:58</td>
-        </tr>   
-            <td>8</td> <td>ERAMOS TIPO FUNK</td> <td>2:43</td>
-        </tr>    
-            <td>9</td> <td>UM ACORDE</td> <td>4:11</td>
-        </tr>  
-            <td>10</td> <td>DIGITAL INFLUENCER</td> <td>2:46</td>
-        </tr>
-            <td>11</td> <td>CAMISA 12</td> <td>3:22</td>
-        </tr>
-            <td>12</td> <td>OGUM</td> <td>3:36</td>
-        </tr></tbody>  
-            <tfoot><td>13</td> <td>SKR</td> <td>2:52</td>
-        </tr></tfoot>
-    </table>
-    </div>
-
-<!-- 3 FAIXAS DO ALBUM BK -->
-<div id="faixas_bk" style="display: none;" >
-    <table border="2" id="table_bk"  >
-        <img onclick="x_clic()" id="x" src="IMG/x_um.png" alt="">
-        <h4 id="h3_bk" >BK - Castelos & Ruínas</h4>
-        <img id="bka" src="IMG/imagem_bk.jpg" alt="">
-       <thead> <tr>
-            <th>Faixa</th> <th>Música</th> <th>Duração</th>
-        </tr></thead>
-        <tbody><tr>
-            <td>1</td> <td>Sigo na Sombra</td> <td>3:15</td>
-        </tr>
-        <tr>
-            <td>2</td> <td>C&R Interlúdio I</td> <td>2:15</td>
-        </tr>    
-            <td>3</td> <td>Quadros</td> <td>5:10</td>
-        </tr>    
-            <td>4</td> <td>O Que Sobra Disso Tudo</td> <td>2:40</td>
-        </tr>    
-            <td>5</td> <td>Visão Ampla</td> <td>3:16</td>
-        </tr>    
-            <td>6</td> <td>Caminhos</td> <td>2:48</td>
-        </tr>    
-            <td>7</td> <td>Castelos & Ruínas</td> <td>4:10</td>
-        </tr>   
-            <td>8</td> <td>Pirâmide</td> <td>3:19</td>
-        </tr>    
-            <td>9</td> <td>Amores, Vícios e Obsessões</td> <td>3:15</td>
-        </tr>  
-            <td>10</td> <td>Não Me Espere</td> <td>4:11</td>
-        </tr>   
-            <td>11</td> <td>Um Dia de Chuva Qualquer</td> <td>3:40</td>
-        </tr>    
-            <td>12</td> <td>C&R Interlúdio II</td> <td>1:40</td>
-        </tr> </tbody>  
-            <tfoot><td>13</td> <td>O Próximo Nascer do Sol</td> <td>3:07</td>
-        </tr></tfoot>
-    </table>
-    </div>
-    
-<!-- 4 FAIXAS DO ALBUM RACIONAIS -->
-<div id="faixas_racionais"  style="display: none;" >
-    <table border="2" id="table_racionais" >
-        <img onclick="x_clic()" id="x" src="IMG/x_um.png" alt="">
-        <h4 id="h3_racionais" >Racionais Mc's - Sobrevivendo no Inferno</h4>
-        <img id="rac" src="IMG/racionais_img.jpg" alt="">
-       <thead> <tr>
-            <th>Faixa</th> <th>Música</th> <th>Duração</th>
-        </tr></thead>
-        <tbody><tr>
-            <td>1</td> <td>Jorge da Capadócia</td> <td>2:17</td>
-        </tr>
-        <tr>
-            <td>2</td> <td>Gênesis (Intro)</td> <td>0:22</td>
-        </tr>    
-            <td>3</td> <td>Capítulo 4, Versículo 3</td> <td>8:09</td>
-        </tr>    
-            <td>4</td> <td>Tô Ouvindo Alguém me Chamar</td> <td>11:14</td>
-        </tr>    
-            <td>5</td> <td>Rapaz comum</td> <td>6:20</td>
-        </tr>    
-            <td>6</td> <td>Interlúdio</td> <td>2:35</td>
-        </tr>    
-            <td>7</td> <td>Diário de um Detento</td> <td>7:32</td>
-        </tr>   
-            <td>8</td> <td>Periferia é Periferia</td> <td>6:00</td>
-        </tr>    
-            <td>9</td> <td>Qual Mentira Vou Acreditar?</td> <td>7:42</td>
-        </tr>
-            <td>10</td> <td>Mágico de Oz</td> <td>7:38</td>
-        </tr>    
-            <td>11</td> <td>Fórmula Mágica da Paz</td> <td>10:41</td>
-        </tr>  </tbody>  
-            <tfoot><td>12</td> <td>Salve</td> <td>2:17</td>
-        </tr></tfoot>
-    </table>
-    </div>
-
-<img id="album_um"onclick="djonga()" src="IMG/album_djonga.jpg" alt="" style="display: block;">
-<img id="album_dois" onclick="coruja()" src="IMG/album_coruja.jpg" alt=""style="display: block;">
-<img id="album_tres"onclick="bk()"  src="IMG/album_bk.png" alt=""style="display: block;">
-<img id="album_quatro"onclick="racionais()" src="IMG/album_racionais.jpg" alt="" style="display: block;">
-</div>
-
-<!-- FAIXAS INTERNACIONAIS -->
-        <div class="album_internacional">
-
-<!-- 1 FAIXAS DO ALBUM BIG -->
-<div id="faixas_big"  style="display: none;">
-    <table border="2" id="table_big" >
-        <img onclick="x_dois_clic()" id="x_dois" src="IMG/x_um.png"alt="">
-        <h4 id="h3_big" >Notorious B.I.G. - Ready to Die</h4>
-        <img id="big" src="IMG/notorious.jpg" alt="">
-       <thead> <tr>
-            <th>Faixa</th> <th>Música</th> <th>Duração</th>
-        </tr></thead>
-        <tbody><tr>
-            <td>1</td> <td>Intro</td> <td>3:24</td>
-        </tr>
-        <tr>
-            <td>2</td> <td>Things Done Changed</td> <td>3:58</td>
-        </tr>    
-            <td>3</td> <td>Gimme the Loot</td> <td>5:04</td>
-        </tr>    
-            <td>4</td> <td>Machine Gun Funk</td> <td>4:17</td>
-        </tr>    
-            <td>5</td> <td>Warning</td> <td>3:40</td>
-        </tr>    
-            <td>6</td> <td>Ready to Die</td> <td>4:24</td>
-        </tr>    
-            <td>7</td> <td>One More Chance</td> <td>4:43</td>
-        </tr>   
-            <td>8</td> <td>#!*@ Me(Interlúdio)</td> <td>1:31</td>
-        </tr>    
-            <td>9</td> <td>The What </td> <td>3:57</td>
-        </tr>  </tbody>  
-            <tfoot><td>10</td> <td>Juicy</td> <td>5:02</td>
-        </tr></tfoot>
-    </table>
-    </div>
-
-    <!-- 1 FAIXAS DO ALBUM 2PAC-->
-    <div id="faixas_pac"  style="display: none;">
-        <table border="2" id="table_pac" >
-            <img onclick="x_dois_clic()" id="x_dois" src="IMG/x_um.png"alt="">
-            <h4 id="h3_pac" >2PAC - Me Against the World</h4>
-            <img id="pac" src="IMG/img_2pac.jpeg" alt="">
-           <thead> <tr>
-                <th>Faixa</th> <th>Música</th> <th>Duração</th>
-            </tr></thead>
-            <tbody><tr>
-                <td>1</td> <td>Intro</td> <td>1:40</td>
-            </tr>
-            <tr>
-                <td>2</td> <td>If I Die 2Nite</td> <td>4:01</td>
-            </tr>    
-                <td>3</td> <td>Me Against the World</td> <td>4:40</td>
-            </tr>    
-                <td>4</td> <td>So Many Tears</td> <td>5:00</td>
-            </tr>    
-                <td>5</td> <td>Young Niggaz</td> <td>4:53</td>
-            </tr>    
-                <td>6</td> <td>Young Niggaz</td> <td>4:53</td>
-            </tr>    
-                <td>7</td> <td>Heavy in the Game</td> <td>4:23</td>
-            </tr>   
-                <td>8</td> <td>Lord Knows</td> <td>	4:31</td>
-            </tr>    
-                <td>9</td> <td>Dear Mama</td> <td>4:40</td>
-            </tr>  </tbody>  
-                <tfoot><td>10</td> <td>It Ain't Easy</td> <td>4:53</td>
-            </tr></tfoot>
-        </table>
-        </div>
-
-        <!-- 1 FAIXAS DO ALBUM EMINEM-->
-        <div id="faixas_eminem"  style="display: none;">
-            <table border="2" id="table_eminem" >
-                <img onclick="x_dois_clic()" id="x_dois" src="IMG/x_um.png"alt="">
-                <h4 id="h3_eminem" >Eminem - The marshall mathers LP</h4>
-                <img id="eminem" src="IMG/Eminem (1).jpg" alt="">
-               <thead> <tr>
-                    <th>Faixa</th> <th>Música</th> <th>Duração</th>
-                </tr></thead>
-                <tbody><tr>
-                    <td>1</td> <td>Public Service Announcement</td> <td>0:26</td>
-                </tr>
-                <tr>
-                    <td>2</td> <td>Kill You</td> <td>4:24</td>
-                </tr>    
-                    <td>3</td> <td>Stan</td> <td>6:44</td>
-                </tr>    
-                    <td>4</td> <td>Paul (skit)</td> <td>0:11</td>
-                </tr>    
-                    <td>5</td> <td>Who Knew</td> <td>3:48</td>
-                </tr>    
-                    <td>6</td> <td>Steve Berman(skit)</td> <td>0:54</td>
-                </tr>    
-                    <td>7</td> <td>The Way I Am</td> <td>4:50</td>
-                </tr>   
-                    <td>8</td> <td>The Real Slim Shady</td> <td>4:44</td>
-                </tr>    
-                    <td>9</td> <td>Remember Me? </td> <td>3:39</td>
-                </tr>  </tbody>  
-                <td>10</td> <td>I'm Back</td> <td>5:10</td>
-                </tr>    
-                    <td>11</td> <td>Marshall Mathers</td> <td>5:21</td>
-                </tr>    
-                    <td>12</td> <td>Bitch Please II</td> <td>4:48</td>
-                </tr> 
-                <tfoot><td>13</td> <td>Crimina</td> <td>5:19</td>
-                </tr></tfoot>
-            </table>
+                </ul>
             </div>
-            
-            <!-- 1 FAIXAS DO ALBUM 50CENT-->
-            <div id="faixas_cent"  style="display: none;">
-                <table border="2" id="table_cent" >
-                    <img onclick="x_dois_clic()" id="x_dois" src="IMG/x_um.png"alt="">
-                    <h4 id="h3_cent" >50 Cent - Get Rich or Die Tryin'</h4>
-                    <img id="cent" src="IMG/img_cent.jpg" alt="">
-                   <thead> <tr>
-                        <th>Faixa</th> <th>Música</th> <th>Duração</th>
-                    </tr></thead>
-                    <tbody><tr>
-                        <td>1</td> <td>Intro</td> <td>	0:06</td>
-                    </tr>
-                    <tr>
-                        <td>2</td> <td>Whats Up Gangsta?</td> <td>2:59</td>
-                    </tr>    
-                        <td>3</td> <td>Patiently Waiting</td> <td>4:48</td>
-                    </tr>    
-                        <td>4</td> <td>Many Men (Wish Death)</td> <td>4:16</td>
-                    </tr>    
-                        <td>5</td> <td>In da Club</td> <td>	3:13</td>
-                    </tr>    
-                        <td>6</td> <td>High All the Time</td> <td>	4:29</td>
-                    </tr>    
-                        <td>7</td> <td>Heat</td> <td>	4:14</td>
-                    </tr>   
-                        <td>8</td> <td>If I Can't</td> <td>3:16</td>
-                    </tr>    
-                        <td>9</td> <td>Blood Hound</td> <td>	4:00</td>
-                    </tr> 
-                        <td>10</td> <td>Back Down</td> <td>4:03</td>
-                    </tr>   
-                        <td>11</td> <td>P.I.M.P.</td> <td>	4:09</td>
-                    </tr>    
-                        <td>12</td> <td>21 Questions</td> <td>3:44</td>
-                    </tr>  </tbody>  
-                        <tfoot><td>13</td> <td>Life's on the Line</td> <td>	3:38</td>
-                    </tr></tfoot>
-                </table>
+
+        </div>
+
+    </div>
+    <div class="borda"></div>
+    <div class="borda_dois"></div>
+    <div class="imagem_fundo">
+        <div class="container">
+            <br><br><br>
+            <center>
+                <div class="texto_inicio">
+                    <audio src=""></audio>
+                    <h1>Seja bem vindo ao RAP AREA 🎶</h1>
+                    <br>
+                    <p> Curta suas músicas de RAP favoritas com um serviço completo e
+                        interativo com um preço que cabe no seu bolso. <br><br>
+                        <b> Curiosidades, biografias, notícias, playlists, discografia, Quiz divertido e muito
+                            mais...</b>
+                    </p>
                 </div>
-    
-        <img id="album_cinco" onclick="tupac()" src="IMG/album_tupac.jpg" alt=""style="display: block;">
-        <img id="album_seis"onclick="big()"  src="IMG/album_notorious.png" alt=""style="display: block;">
-        <img id="album_sete" onclick="eminem()" src="IMG/album_eminem.jpg" alt=""style="display: block;">
-        <img id="album_oito"onclick="cent()"  src="IMG/album_50.jpg" alt=""style="display: block;">
+                <br><br><br>
+                <b id="negrito_inicio"> Ta esperando o que ? Faça parte dessa comunidade também.</b>
+                <br><br><br>
+            </center>
+            <a href="meu_cadastro.html"> <button type="button" id="button_exp">Experimente 30 dias grátis</button></a>
         </div>
-        
-</div>
-</div>
-<div class="borda_dois"></div>
-<div class="borda"></div>
-<div class="borda_dois"></div>
-
-
-<div class="fundo_tres">
-<div class="container">
-<div class="h1_card"><h1>Notícias atualizadas sobre o mundo do RAP  😲</h1></div>
-<img onclick="seta_um()" id="s_um" src="IMG/seta_preta.png" alt="" style="display: block;" height="50px" >
-<img onclick="seta_um_branca()"id="s_dois" src="IMG/seta_branca.png" alt=""style="display: none;"height="50px">
-<img onclick="seta_dois()"id="s_tres" src="IMG/seta_preta_dois.png" alt=""style="display: none;"height="50px">
-<img onclick="seta_dois_branca()"id="s_qua" src="IMG/seta_branca_dois.png"style="display: block;" height="50px">
-
-<!-- PRIMEIRO CARD DJONGA -->
-<div id="noticias_um" style="display: block;">
-<div class="cards">
-    <div class="topo_card">
-        <h2>Djonga em protesto</h2>
-        <span class="resumo_card">Djonga participa de protesto em unidade do Carrefour em BH que cobra justiça
-             pela morte de Beto Freitas</span>
     </div>
-    <div class="img_card"></div>
-    <div class="conteudo">Djonga participa de protesto em unidade do Carrefour em BH que cobra justiça
-        pela morte de Beto Freitas. <br><br>
+    <div class="borda_dois"></div>
+    <div class="borda"></div>
+    <div class="borda_dois"></div>
+
+    <div class="fundo_dois">
+
+        <div class="container">
+            <h1>Album completo dos seus artistas favoritos 📀</h1>
+            <h2 id="nacional_text">Nacionais ⬇ <b id="internacional_text">Internacionais ⬇</b></h2>
+
+            <div class="text_fundo_dois"> História do RAP ✔<br><br>
+                Biografia dos artistas ✔<br><br>
+                Quiz divertida sobre RAP ✔<br><br>
+                Discografia dos artistas ✔</div>
 
 
-        <a href="meu_cadastro.html"> <button id="button_card">Saiba mais</button></a></div>
-</div>
-<!-- SEGUNDO CARD DR.DREE -->
-<div class="cards">
-    <div class="topo_card">
-        <h2>DR.Dree e Eminem</h2>
-        <span class="resumo_card">Dr. Dre terminou seu novo álbum e Eminem está no projeto, afirma rapper</span>
-    </div>
-    <div class="img_card_dois"></div>
-    <div class="conteudo">O rapper de Detroit, Page Kennedy, confirma que ouviu um novo álbum de Dr. Dre,
-         provando que Eminem também está envolvido com o projeto. <br><br>
+            <div class="album_nacional">
 
+                <!-- 1 FAIXAS DO ALBUM DJONGA -->
+                <div id="faixas_djonga" style="display: none;">
+                    <table border="2" id="table_djonga">
+                        <img onclick="x_clic()" id="x" src="IMG/x_um.png" alt="">
+                        <h4 id="h3_djonga">Djonga - O menino que queria ser Deus</h4>
+                        <img id="djo" src="IMG/djonga_2.png" alt="">
+                        <thead>
+                            <tr>
+                                <th>Faixa</th>
+                                <th>Música</th>
+                                <th>Duração</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>ATÍPICO</td>
+                                <td>3:20</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>JUNHO DE 94</td>
+                                <td>5:29</td>
+                            </tr>
+                            <td>3</td>
+                            <td>UFA</td>
+                            <td>5:52</td>
+                            </tr>
+                            <td>4</td>
+                            <td>1010</td>
+                            <td>3:58</td>
+                            </tr>
+                            <td>5</td>
+                            <td>SOLTO</td>
+                            <td>3:39</td>
+                            </tr>
+                            <td>6</td>
+                            <td>CANÇÃO PRO MEU FILHO</td>
+                            <td>3:32</td>
+                            </tr>
+                            <td>7</td>
+                            <td>CORRA</td>
+                            <td>3:40</td>
+                            </tr>
+                            <td>8</td>
+                            <td>ESTOURO</td>
+                            <td>3:32</td>
+                            </tr>
+                            <td>9</td>
+                            <td>DE LÁ</td>
+                            <td>2:46</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <td>10</td>
+                            <td>ETERNO</td>
+                            <td>3:36</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
 
-         <a href="meu_cadastro.html"><button id="button_card" >Saiba mais</button></a></div>
-</div>
-<!-- TERCEIRO CARD PS5 -->
-<div class="cards">
-    <div class="topo_card">
-        <h2>PS5 ou flores ?</h2>
-        <span class="resumo_card">Modelo desabafa após rapper comprar PS5 ao invés de lhe levar flores no hospital</span>
-    </div>
-    <div class="img_card_tres"></div>
-    <div class="conteudo">O namorado de Alexis Skyy estava carregando presentes quando a visitou no hospital,
-         e ela não estava esperando por isso. <br><br>
+                <!-- 2 FAIXAS DO ALBUM CORUJA -->
+                <div id="faixas_coruja" style="display: none;">
+                    <table border="2" id="table_coruja">
+                        <img onclick="x_clic()" id="x" src="IMG/x_um.png" alt="">
+                        <h4 id="h3_coruja">Coruja BC1 - Psicodelic</h4>
+                        <img id="cor" src="IMG/imagem_certa_coruja.jpg" alt="">
+                        <thead>
+                            <tr>
+                                <th>Faixa</th>
+                                <th>Música</th>
+                                <th>Duração</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>LAGRIMAS DE ODÉ</td>
+                                <td>4:15</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>FOGO</td>
+                                <td>3:29</td>
+                            </tr>
+                            <td>3</td>
+                            <td>APÓCRIFO</td>
+                            <td>5:00</td>
+                            </tr>
+                            <td>4</td>
+                            <td>GUSTAVO</td>
+                            <td>4:51</td>
+                            </tr>
+                            <td>5</td>
+                            <td>INTERLÚDIO</td>
+                            <td>1:56</td>
+                            </tr>
+                            <td>6</td>
+                            <td>MEU ANJO</td>
+                            <td>3:02</td>
+                            </tr>
+                            <td>7</td>
+                            <td>DOPAMINA</td>
+                            <td>2:58</td>
+                            </tr>
+                            <td>8</td>
+                            <td>ERAMOS TIPO FUNK</td>
+                            <td>2:43</td>
+                            </tr>
+                            <td>9</td>
+                            <td>UM ACORDE</td>
+                            <td>4:11</td>
+                            </tr>
+                            <td>10</td>
+                            <td>DIGITAL INFLUENCER</td>
+                            <td>2:46</td>
+                            </tr>
+                            <td>11</td>
+                            <td>CAMISA 12</td>
+                            <td>3:22</td>
+                            </tr>
+                            <td>12</td>
+                            <td>OGUM</td>
+                            <td>3:36</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <td>13</td>
+                            <td>SKR</td>
+                            <td>2:52</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
 
+                <!-- 3 FAIXAS DO ALBUM BK -->
+                <div id="faixas_bk" style="display: none;">
+                    <table border="2" id="table_bk">
+                        <img onclick="x_clic()" id="x" src="IMG/x_um.png" alt="">
+                        <h4 id="h3_bk">BK - Castelos & Ruínas</h4>
+                        <img id="bka" src="IMG/imagem_bk.jpg" alt="">
+                        <thead>
+                            <tr>
+                                <th>Faixa</th>
+                                <th>Música</th>
+                                <th>Duração</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Sigo na Sombra</td>
+                                <td>3:15</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>C&R Interlúdio I</td>
+                                <td>2:15</td>
+                            </tr>
+                            <td>3</td>
+                            <td>Quadros</td>
+                            <td>5:10</td>
+                            </tr>
+                            <td>4</td>
+                            <td>O Que Sobra Disso Tudo</td>
+                            <td>2:40</td>
+                            </tr>
+                            <td>5</td>
+                            <td>Visão Ampla</td>
+                            <td>3:16</td>
+                            </tr>
+                            <td>6</td>
+                            <td>Caminhos</td>
+                            <td>2:48</td>
+                            </tr>
+                            <td>7</td>
+                            <td>Castelos & Ruínas</td>
+                            <td>4:10</td>
+                            </tr>
+                            <td>8</td>
+                            <td>Pirâmide</td>
+                            <td>3:19</td>
+                            </tr>
+                            <td>9</td>
+                            <td>Amores, Vícios e Obsessões</td>
+                            <td>3:15</td>
+                            </tr>
+                            <td>10</td>
+                            <td>Não Me Espere</td>
+                            <td>4:11</td>
+                            </tr>
+                            <td>11</td>
+                            <td>Um Dia de Chuva Qualquer</td>
+                            <td>3:40</td>
+                            </tr>
+                            <td>12</td>
+                            <td>C&R Interlúdio II</td>
+                            <td>1:40</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <td>13</td>
+                            <td>O Próximo Nascer do Sol</td>
+                            <td>3:07</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
 
-         <a href="meu_cadastro.html">    <button id="button_card">Saiba mais</button></a></div>
-</div>
-</div>
+                <!-- 4 FAIXAS DO ALBUM RACIONAIS -->
+                <div id="faixas_racionais" style="display: none;">
+                    <table border="2" id="table_racionais">
+                        <img onclick="x_clic()" id="x" src="IMG/x_um.png" alt="">
+                        <h4 id="h3_racionais">Racionais Mc's - Sobrevivendo no Inferno</h4>
+                        <img id="rac" src="IMG/racionais_img.jpg" alt="">
+                        <thead>
+                            <tr>
+                                <th>Faixa</th>
+                                <th>Música</th>
+                                <th>Duração</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Jorge da Capadócia</td>
+                                <td>2:17</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Gênesis (Intro)</td>
+                                <td>0:22</td>
+                            </tr>
+                            <td>3</td>
+                            <td>Capítulo 4, Versículo 3</td>
+                            <td>8:09</td>
+                            </tr>
+                            <td>4</td>
+                            <td>Tô Ouvindo Alguém me Chamar</td>
+                            <td>11:14</td>
+                            </tr>
+                            <td>5</td>
+                            <td>Rapaz comum</td>
+                            <td>6:20</td>
+                            </tr>
+                            <td>6</td>
+                            <td>Interlúdio</td>
+                            <td>2:35</td>
+                            </tr>
+                            <td>7</td>
+                            <td>Diário de um Detento</td>
+                            <td>7:32</td>
+                            </tr>
+                            <td>8</td>
+                            <td>Periferia é Periferia</td>
+                            <td>6:00</td>
+                            </tr>
+                            <td>9</td>
+                            <td>Qual Mentira Vou Acreditar?</td>
+                            <td>7:42</td>
+                            </tr>
+                            <td>10</td>
+                            <td>Mágico de Oz</td>
+                            <td>7:38</td>
+                            </tr>
+                            <td>11</td>
+                            <td>Fórmula Mágica da Paz</td>
+                            <td>10:41</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <td>12</td>
+                            <td>Salve</td>
+                            <td>2:17</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
 
-<!-- COMBO DAS OUTRAS 3 NOTICIAS -->
+                <img id="album_um" onclick="djonga()" src="IMG/album_djonga.jpg" alt="" style="display: block;">
+                <img id="album_dois" onclick="coruja()" src="IMG/album_coruja.jpg" alt="" style="display: block;">
+                <img id="album_tres" onclick="bk()" src="IMG/album_bk.png" alt="" style="display: block;">
+                <img id="album_quatro" onclick="racionais()" src="IMG/album_racionais.jpg" alt=""
+                    style="display: block;">
+            </div>
 
-<!-- QUARTA CARD NICKI -->
-<div id="noticias_dois" style="display: none;">
-    <div class="cards">
-        <div class="topo_card">
-            <h2>Nicki Minaj nas telinhas</h2>
-            <span class="resumo_card">Nicki Minaj anuncia série documental sobre sua vida e carreira na HBO Max</span>
+            <!-- FAIXAS INTERNACIONAIS -->
+            <div class="album_internacional">
+
+                <!-- 1 FAIXAS DO ALBUM BIG -->
+                <div id="faixas_big" style="display: none;">
+                    <table border="2" id="table_big">
+                        <img onclick="x_dois_clic()" id="x_dois" src="IMG/x_um.png" alt="">
+                        <h4 id="h3_big">Notorious B.I.G. - Ready to Die</h4>
+                        <img id="big" src="IMG/notorious.jpg" alt="">
+                        <thead>
+                            <tr>
+                                <th>Faixa</th>
+                                <th>Música</th>
+                                <th>Duração</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Intro</td>
+                                <td>3:24</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Things Done Changed</td>
+                                <td>3:58</td>
+                            </tr>
+                            <td>3</td>
+                            <td>Gimme the Loot</td>
+                            <td>5:04</td>
+                            </tr>
+                            <td>4</td>
+                            <td>Machine Gun Funk</td>
+                            <td>4:17</td>
+                            </tr>
+                            <td>5</td>
+                            <td>Warning</td>
+                            <td>3:40</td>
+                            </tr>
+                            <td>6</td>
+                            <td>Ready to Die</td>
+                            <td>4:24</td>
+                            </tr>
+                            <td>7</td>
+                            <td>One More Chance</td>
+                            <td>4:43</td>
+                            </tr>
+                            <td>8</td>
+                            <td>#!*@ Me(Interlúdio)</td>
+                            <td>1:31</td>
+                            </tr>
+                            <td>9</td>
+                            <td>The What </td>
+                            <td>3:57</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <td>10</td>
+                            <td>Juicy</td>
+                            <td>5:02</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <!-- 1 FAIXAS DO ALBUM 2PAC-->
+                <div id="faixas_pac" style="display: none;">
+                    <table border="2" id="table_pac">
+                        <img onclick="x_dois_clic()" id="x_dois" src="IMG/x_um.png" alt="">
+                        <h4 id="h3_pac">2PAC - Me Against the World</h4>
+                        <img id="pac" src="IMG/img_2pac.jpeg" alt="">
+                        <thead>
+                            <tr>
+                                <th>Faixa</th>
+                                <th>Música</th>
+                                <th>Duração</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Intro</td>
+                                <td>1:40</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>If I Die 2Nite</td>
+                                <td>4:01</td>
+                            </tr>
+                            <td>3</td>
+                            <td>Me Against the World</td>
+                            <td>4:40</td>
+                            </tr>
+                            <td>4</td>
+                            <td>So Many Tears</td>
+                            <td>5:00</td>
+                            </tr>
+                            <td>5</td>
+                            <td>Young Niggaz</td>
+                            <td>4:53</td>
+                            </tr>
+                            <td>6</td>
+                            <td>Young Niggaz</td>
+                            <td>4:53</td>
+                            </tr>
+                            <td>7</td>
+                            <td>Heavy in the Game</td>
+                            <td>4:23</td>
+                            </tr>
+                            <td>8</td>
+                            <td>Lord Knows</td>
+                            <td> 4:31</td>
+                            </tr>
+                            <td>9</td>
+                            <td>Dear Mama</td>
+                            <td>4:40</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <td>10</td>
+                            <td>It Ain't Easy</td>
+                            <td>4:53</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <!-- 1 FAIXAS DO ALBUM EMINEM-->
+                <div id="faixas_eminem" style="display: none;">
+                    <table border="2" id="table_eminem">
+                        <img onclick="x_dois_clic()" id="x_dois" src="IMG/x_um.png" alt="">
+                        <h4 id="h3_eminem">Eminem - The marshall mathers LP</h4>
+                        <img id="eminem" src="IMG/Eminem (1).jpg" alt="">
+                        <thead>
+                            <tr>
+                                <th>Faixa</th>
+                                <th>Música</th>
+                                <th>Duração</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Public Service Announcement</td>
+                                <td>0:26</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Kill You</td>
+                                <td>4:24</td>
+                            </tr>
+                            <td>3</td>
+                            <td>Stan</td>
+                            <td>6:44</td>
+                            </tr>
+                            <td>4</td>
+                            <td>Paul (skit)</td>
+                            <td>0:11</td>
+                            </tr>
+                            <td>5</td>
+                            <td>Who Knew</td>
+                            <td>3:48</td>
+                            </tr>
+                            <td>6</td>
+                            <td>Steve Berman(skit)</td>
+                            <td>0:54</td>
+                            </tr>
+                            <td>7</td>
+                            <td>The Way I Am</td>
+                            <td>4:50</td>
+                            </tr>
+                            <td>8</td>
+                            <td>The Real Slim Shady</td>
+                            <td>4:44</td>
+                            </tr>
+                            <td>9</td>
+                            <td>Remember Me? </td>
+                            <td>3:39</td>
+                            </tr>
+                        </tbody>
+                        <td>10</td>
+                        <td>I'm Back</td>
+                        <td>5:10</td>
+                        </tr>
+                        <td>11</td>
+                        <td>Marshall Mathers</td>
+                        <td>5:21</td>
+                        </tr>
+                        <td>12</td>
+                        <td>Bitch Please II</td>
+                        <td>4:48</td>
+                        </tr>
+                        <tfoot>
+                            <td>13</td>
+                            <td>Crimina</td>
+                            <td>5:19</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <!-- 1 FAIXAS DO ALBUM 50CENT-->
+                <div id="faixas_cent" style="display: none;">
+                    <table border="2" id="table_cent">
+                        <img onclick="x_dois_clic()" id="x_dois" src="IMG/x_um.png" alt="">
+                        <h4 id="h3_cent">50 Cent - Get Rich or Die Tryin'</h4>
+                        <img id="cent" src="IMG/img_cent.jpg" alt="">
+                        <thead>
+                            <tr>
+                                <th>Faixa</th>
+                                <th>Música</th>
+                                <th>Duração</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Intro</td>
+                                <td> 0:06</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Whats Up Gangsta?</td>
+                                <td>2:59</td>
+                            </tr>
+                            <td>3</td>
+                            <td>Patiently Waiting</td>
+                            <td>4:48</td>
+                            </tr>
+                            <td>4</td>
+                            <td>Many Men (Wish Death)</td>
+                            <td>4:16</td>
+                            </tr>
+                            <td>5</td>
+                            <td>In da Club</td>
+                            <td> 3:13</td>
+                            </tr>
+                            <td>6</td>
+                            <td>High All the Time</td>
+                            <td> 4:29</td>
+                            </tr>
+                            <td>7</td>
+                            <td>Heat</td>
+                            <td> 4:14</td>
+                            </tr>
+                            <td>8</td>
+                            <td>If I Can't</td>
+                            <td>3:16</td>
+                            </tr>
+                            <td>9</td>
+                            <td>Blood Hound</td>
+                            <td> 4:00</td>
+                            </tr>
+                            <td>10</td>
+                            <td>Back Down</td>
+                            <td>4:03</td>
+                            </tr>
+                            <td>11</td>
+                            <td>P.I.M.P.</td>
+                            <td> 4:09</td>
+                            </tr>
+                            <td>12</td>
+                            <td>21 Questions</td>
+                            <td>3:44</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <td>13</td>
+                            <td>Life's on the Line</td>
+                            <td> 3:38</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <img id="album_cinco" onclick="tupac()" src="IMG/album_tupac.jpg" alt="" style="display: block;">
+                <img id="album_seis" onclick="big()" src="IMG/album_notorious.png" alt="" style="display: block;">
+                <img id="album_sete" onclick="eminem()" src="IMG/album_eminem.jpg" alt="" style="display: block;">
+                <img id="album_oito" onclick="cent()" src="IMG/album_50.jpg" alt="" style="display: block;">
+            </div>
+
         </div>
-        <div class="img_card_quatro"></div>
-        <div class="conteudo">Nicki Minaj vai deixor os fãs entrarem em seu reino em um novo documentário para a HBO Max. <br><br>
-    
-            <a href="meu_cadastro.html"> <button id="button_card">Saiba mais</button></a></div>
     </div>
-    <!-- QUINTA CARD lançamentos -->
-    <div class="cards">
-        <div class="topo_card">
-            <h2>Lançamentos do Rap Nacional</h2>
-            <span class="resumo_card">Jovem Dex & KayBlack, Ju Dorotea, Menestrel, Misael e Tunico da Vila</span>
+    <div class="borda_dois"></div>
+    <div class="borda"></div>
+    <div class="borda_dois"></div>
+
+
+    <div class="fundo_tres">
+        <div class="container">
+            <div class="h1_card">
+                <h1>Notícias atualizadas sobre o mundo do RAP 😲</h1>
+            </div>
+            <img onclick="seta_um()" id="s_um" src="IMG/seta_preta.png" alt="" style="display: block;" height="50px">
+            <img onclick="seta_um_branca()" id="s_dois" src="IMG/seta_branca.png" alt="" style="display: none;"
+                height="50px">
+            <img onclick="seta_dois()" id="s_tres" src="IMG/seta_preta_dois.png" alt="" style="display: none;"
+                height="50px">
+            <img onclick="seta_dois_branca()" id="s_qua" src="IMG/seta_branca_dois.png" style="display: block;"
+                height="50px">
+
+            <!-- PRIMEIRO CARD DJONGA -->
+            <div id="noticias_um" style="display: block;">
+                <div class="cards">
+                    <div class="topo_card">
+                        <h2>Djonga em protesto</h2>
+                        <span class="resumo_card">Djonga participa de protesto em unidade do Carrefour em BH que cobra
+                            justiça
+                            pela morte de Beto Freitas</span>
+                    </div>
+                    <div class="img_card"></div>
+                    <div class="conteudo">Djonga participa de protesto em unidade do Carrefour em BH que cobra justiça
+                        pela morte de Beto Freitas. <br><br>
+
+
+                        <a href="meu_cadastro.html"> <button id="button_card">Saiba mais</button></a>
+                    </div>
+                </div>
+                <!-- SEGUNDO CARD DR.DREE -->
+                <div class="cards">
+                    <div class="topo_card">
+                        <h2>DR.Dree e Eminem</h2>
+                        <span class="resumo_card">Dr. Dre terminou seu novo álbum e Eminem está no projeto, afirma
+                            rapper</span>
+                    </div>
+                    <div class="img_card_dois"></div>
+                    <div class="conteudo">O rapper de Detroit, Page Kennedy, confirma que ouviu um novo álbum de Dr.
+                        Dre,
+                        provando que Eminem também está envolvido com o projeto. <br><br>
+
+
+                        <a href="meu_cadastro.html"><button id="button_card">Saiba mais</button></a>
+                    </div>
+                </div>
+                <!-- TERCEIRO CARD PS5 -->
+                <div class="cards">
+                    <div class="topo_card">
+                        <h2>PS5 ou flores ?</h2>
+                        <span class="resumo_card">Modelo desabafa após rapper comprar PS5 ao invés de lhe levar flores
+                            no hospital</span>
+                    </div>
+                    <div class="img_card_tres"></div>
+                    <div class="conteudo">O namorado de Alexis Skyy estava carregando presentes quando a visitou no
+                        hospital,
+                        e ela não estava esperando por isso. <br><br>
+
+
+                        <a href="meu_cadastro.html"> <button id="button_card">Saiba mais</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMBO DAS OUTRAS 3 NOTICIAS -->
+
+            <!-- QUARTA CARD NICKI -->
+            <div id="noticias_dois" style="display: none;">
+                <div class="cards">
+                    <div class="topo_card">
+                        <h2>Nicki Minaj nas telinhas</h2>
+                        <span class="resumo_card">Nicki Minaj anuncia série documental sobre sua vida e carreira na HBO
+                            Max</span>
+                    </div>
+                    <div class="img_card_quatro"></div>
+                    <div class="conteudo">Nicki Minaj vai deixor os fãs entrarem em seu reino em um novo documentário
+                        para a HBO Max. <br><br>
+
+                        <a href="meu_cadastro.html"> <button id="button_card">Saiba mais</button></a>
+                    </div>
+                </div>
+                <!-- QUINTA CARD lançamentos -->
+                <div class="cards">
+                    <div class="topo_card">
+                        <h2>Lançamentos do Rap Nacional</h2>
+                        <span class="resumo_card">Jovem Dex & KayBlack, Ju Dorotea, Menestrel, Misael e Tunico da
+                            Vila</span>
+                    </div>
+                    <div class="img_card_cinco"></div>
+                    <div class="conteudo">Grande nome do Rap Nacional, Jovem Dex se uniu com outra revelação, KayBlack,
+                        para a inédita “Panamera”. <br><br>
+
+                        <a href="meu_cadastro.html"><button id="button_card">Saiba mais</button></a>
+                    </div>
+                </div>
+                <!-- SEXTA CARD XXXXX -->
+                <div class="cards">
+                    <div class="topo_card">
+                        <h2>Batalha de Rap de YoDa</h2>
+                        <span class="resumo_card">Uniu comunidade gamer e a cultura hip hop</span>
+                    </div>
+                    <div class="img_card_seis"></div>
+                    <div class="conteudo">Realizada na última sexta-feira (13), a Batalha de Rap SehLoiro, idealizada
+                        por YoDa,
+                        conectou a comunidade gamer com a cultura hip hop. <br><br>
+
+
+                        <a href="meu_cadastro.html"> <button id="button_card">Saiba mais</button></a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="img_card_cinco"></div>
-        <div class="conteudo">Grande nome do Rap Nacional, Jovem Dex se uniu com outra revelação, KayBlack, para a inédita “Panamera”. <br><br>
-    
-            <a href="meu_cadastro.html"><button id="button_card" >Saiba mais</button></a> </div>
     </div>
-    <!-- SEXTA CARD XXXXX -->
-    <div class="cards">
-        <div class="topo_card">
-            <h2>Batalha de Rap de YoDa</h2>
-            <span class="resumo_card">Uniu comunidade gamer e a cultura hip hop</span>
+    <div class="borda_dois"></div>
+    <div class="borda"></div>
+    <div class="borda_dois"></div>
+
+
+    <div class="rodape">
+        <div class="container">
+            <center> <br><br><br><br><br>
+                <div class="rodape_div">
+                    <br><br>
+                    <a href="meu_cadastro.html"> <button id="button_rodape">Ver plano de assinatura</button></a>
+                    <br><br><br>
+                    <h2>Contate-nos nas Redes Sociais</h2>
+                    <a href="https://web.whatsapp.com"> <img src="IMG/whats.png" alt=""></a>
+                    <a href="https://www.instagram.com"><img src="IMG/instagram.png" alt=""></a>
+                    <a href="https://www.facebook.com"><img src="IMG/face.png" alt=""></a>
+                    <a href="https://github.com"><img src="IMG/git.png" alt=""></a>
+            </center>
+            <a href="#icone"><img id="seta_rodape" src="IMG/seta_cima_rodape.png" alt=""></a>
         </div>
-        <div class="img_card_seis"></div>
-        <div class="conteudo">Realizada na última sexta-feira (13), a Batalha de Rap SehLoiro, idealizada por YoDa,
-             conectou a comunidade gamer com a cultura hip hop. <br><br>
-    
-    
-      <a href="meu_cadastro.html"> <button id="button_card" >Saiba mais</button></a> </div>
     </div>
     </div>
-
-</div>
-</div>
-<div class="borda_dois"></div>
-<div class="borda"></div>
-<div class="borda_dois"></div>
-
-
-<div class="rodape">
-    <div class="container">
-     <center>   <br><br><br><br><br>
-        <div class="rodape_div">
-        <br><br>
-   <a href="meu_cadastro.html"> <button id="button_rodape" >Ver plano de assinatura</button></a>
-    <br><br><br>
-    <h2>Contate-nos nas Redes Sociais</h2>
-    <a href="https://web.whatsapp.com"> <img src="IMG/whats.png" alt=""></a>
-    <a href="https://www.instagram.com"><img src="IMG/instagram.png" alt=""></a>
-        <a href="https://www.facebook.com"><img src="IMG/face.png" alt=""></a>
-            <a href="https://github.com"><img src="IMG/git.png" alt=""></a></center>
-    <a href="#icone"><img id="seta_rodape" src="IMG/seta_cima_rodape.png" alt=""></a>
-</div>
-</div>
-</div>
 </body>
+
 </html>
 <script>
     // X ALBUNS NACIONAIS
@@ -511,94 +794,94 @@
 
         x.style = "display: none;"
         album_um.style = "display: block;"
-        album_dois.style = "display: block;" 
-        album_tres.style = "display: block;" 
+        album_dois.style = "display: block;"
+        album_tres.style = "display: block;"
         album_quatro.style = "display: block;"
     }
 
-// INICIO ALBUM NACIONAL
+    // INICIO ALBUM NACIONAL
 
     function djonga() {
         album_um.style = "display: none;"
-        album_dois.style = "display: none;" 
-        album_tres.style = "display: none;" 
-        album_quatro.style = "display: none;" 
+        album_dois.style = "display: none;"
+        album_tres.style = "display: none;"
+        album_quatro.style = "display: none;"
         x.style = "display: block;"
         faixas_djonga.style = "display: block"
     }
     function coruja() {
         x.style = "display: block;"
-        faixas_coruja.style = "display: block;" 
+        faixas_coruja.style = "display: block;"
         album_um.style = "display: none;"
-        album_dois.style = "display: none;" 
-        album_tres.style = "display: none;" 
+        album_dois.style = "display: none;"
+        album_tres.style = "display: none;"
         album_quatro.style = "display: none;"
     }
     function bk() {
         x.style = "display: block;"
-        faixas_bk.style = "display: block;" 
+        faixas_bk.style = "display: block;"
         album_um.style = "display: none;"
-        album_dois.style = "display: none;" 
-        album_tres.style = "display: none;" 
-        album_quatro.style = "display: none;"        
+        album_dois.style = "display: none;"
+        album_tres.style = "display: none;"
+        album_quatro.style = "display: none;"
     }
     function racionais() {
         x.style = "display: block;"
-        faixas_racionais.style = "display: block;" 
+        faixas_racionais.style = "display: block;"
         album_um.style = "display: none;"
-        album_dois.style = "display: none;" 
-        album_tres.style = "display: none;" 
-        album_quatro.style = "display: none;"        
+        album_dois.style = "display: none;"
+        album_tres.style = "display: none;"
+        album_quatro.style = "display: none;"
     }
 
-     // X ALBUNS INTERNACIONAIS
-     function x_dois_clic() {
-         faixas_big.style = "display: none;"
+    // X ALBUNS INTERNACIONAIS
+    function x_dois_clic() {
+        faixas_big.style = "display: none;"
         faixas_pac.style = "display: none;"
         faixas_eminem.style = "display: none;"
-        faixas_cent.style = "display: none;" 
+        faixas_cent.style = "display: none;"
 
         x_dois.style = "display: none;"
         album_cinco.style = "display: block;"
-        album_seis.style = "display: block;" 
-        album_sete.style = "display: block;" 
+        album_seis.style = "display: block;"
+        album_sete.style = "display: block;"
         album_oito.style = "display: block;"
     }
 
     // INICIO ALBUM INTERNACIONAL
     function big() {
         x_dois.style = "display: block;"
-        faixas_big.style = "display: block;" 
+        faixas_big.style = "display: block;"
         album_cinco.style = "display: none;"
-        album_seis.style = "display: none;" 
-        album_sete.style = "display: none;" 
-        album_oito.style = "display: none;"        
+        album_seis.style = "display: none;"
+        album_sete.style = "display: none;"
+        album_oito.style = "display: none;"
     }
     function tupac() {
         x_dois.style = "display: block;"
-        faixas_pac.style = "display: block;" 
+        faixas_pac.style = "display: block;"
         album_cinco.style = "display: none;"
-        album_seis.style = "display: none;" 
-        album_sete.style = "display: none;" 
-        album_oito.style = "display: none;"        
+        album_seis.style = "display: none;"
+        album_sete.style = "display: none;"
+        album_oito.style = "display: none;"
     }
     function eminem() {
         x_dois.style = "display: block;"
-        faixas_eminem.style = "display: block;" 
+        faixas_eminem.style = "display: block;"
         album_cinco.style = "display: none;"
-        album_seis.style = "display: none;" 
-        album_sete.style = "display: none;" 
-        album_oito.style = "display: none;"    
+        album_seis.style = "display: none;"
+        album_sete.style = "display: none;"
+        album_oito.style = "display: none;"
     }
     function cent() {
         x_dois.style = "display: block;"
-        faixas_cent.style = "display: block;" 
+        faixas_cent.style = "display: block;"
         album_cinco.style = "display: none;"
-        album_seis.style = "display: none;" 
-        album_sete.style = "display: none;" 
-        album_oito.style = "display: none;"    
+        album_seis.style = "display: none;"
+        album_sete.style = "display: none;"
+        album_oito.style = "display: none;"
     }
-    
+
 
     function seta_dois_branca() {
         s_tres.style = "display: block;"
