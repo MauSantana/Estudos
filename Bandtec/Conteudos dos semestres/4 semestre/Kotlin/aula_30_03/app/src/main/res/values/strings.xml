@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">aula_30_03</string>
-    <string name="adicionar_mensagem">Adicionar mensagem</string>
-    <string name="mensagem_com_parametros">
-        Olá %1$s sua idade é %2$d
-    </string>
-</resources>
