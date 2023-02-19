@@ -1,53 +1,53 @@
-create database curso_sql;
+CREATE DATABASE CURSO_SQL;
 
-use curso_sql;
-create table funcionarios
+USE CURSO_SQL;
+CREATE TABLE FUNCIONARIOS
 (
-	id int unsigned not null auto_increment,
-    nome varchar(45) not null,
-    salario double not null default '0',
-    departamento  varchar(45) not null,
-    primary key (id)
+	ID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    NOME VARCHAR(45) NOT NULL,
+    SALARIO DOUBLE NOT NULL DEFAULT '0',
+    DEPARTAMENTO  VARCHAR(45) NOT NULL,
+    PRIMARY KEY (ID)
 );
 
-create table veiculos 
+CREATE TABLE VEICULOS 
 (
-	id int unsigned not null auto_increment,
-    funcionario_id int unsigned default null,
-    veiculo varchar(45) not null default '',
-    placa varchar(10) not null default '',
-    primary key (id),
-    constraint fk_veiculos_funcionarios foreign key (funcionario_id) references funcionarios (id)
+	ID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    FUNCIONARIO_ID INT UNSIGNED DEFAULT NULL,
+    VEICULO VARCHAR(45) NOT NULL DEFAULT '',
+    PLACA VARCHAR(10) NOT NULL DEFAULT '',
+    PRIMARY KEY (ID),
+    CONSTRAINT FK_VEICULOS_FUNCIONARIOS FOREIGN KEY (FUNCIONARIO_ID) REFERENCES FUNCIONARIOS (ID)
 );
 
-create table salarios
+CREATE TABLE SALARIOS
 (
-	faixa varchar(45) not null,
-    inicio double not null,
-    fim double not null,
-    primary key (faixa)
+	FAIXA VARCHAR(45) NOT NULL,
+    INICIO DOUBLE NOT NULL,
+    FIM DOUBLE NOT NULL,
+    PRIMARY KEY (FAIXA)
 );
 
-alter table funcionarios change column nome  nome_func varchar (50) not null;
-alter table funcionarios change column nome_func nome varchar (45) not null;
+ALTER TABLE FUNCIONARIOS CHANGE COLUMN NOME  NOME_FUNC VARCHAR (50) NOT NULL;
+ALTER TABLE FUNCIONARIOS CHANGE COLUMN NOME_FUNC NOME VARCHAR (45) NOT NULL;
 
-drop table salarios;
+DROP TABLE SALARIOS;
 
-create index departamentos on funcionarios (departamento);
-create index nomes on funcionarios (nome(6));
+CREATE INDEX DEPARTAMENTOS ON FUNCIONARIOS (DEPARTAMENTO);
+CREATE INDEX NOMES ON FUNCIONARIOS (NOME(6));
 
 CREATE TABLE ACESSORIOS (
-  ID int unsigned NOT NULL,
-  VALOR double NOT NULL default '0',
-  FORNECEDOR varchar(45) NOT NULL,
+  ID INT UNSIGNED NOT NULL,
+  VALOR DOUBLE NOT NULL DEFAULT '0',
+  FORNECEDOR VARCHAR(45) NOT NULL,
   PRIMARY KEY (ID)
 );
 
 CREATE TABLE EMBLEMAS (
-  ID int NOT NULL,
-  FORNECEDOR varchar(45) NULL,
-  EMBLEMA varchar(10) NOT NULL,
-  VALOR double NOT NULL default '0',
+  ID INT NOT NULL,
+  FORNECEDOR VARCHAR(45) NULL,
+  EMBLEMA VARCHAR(10) NOT NULL,
+  VALOR DOUBLE NOT NULL DEFAULT '0',
   PRIMARY KEY (ID)
 );
 

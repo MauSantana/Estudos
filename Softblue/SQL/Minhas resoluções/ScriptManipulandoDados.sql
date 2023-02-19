@@ -1,45 +1,47 @@
-insert into funcionarios (id, nome, salario, departamento) values (1, 'Fernando', 1400, 'TI');
-insert into funcionarios (id, nome, salario, departamento) values (2, 'Guilherme', 2500, 'analista junior');
-insert into funcionarios (nome, salario, departamento) values ('Fabio', 3700, 'analista pleno');
-insert into funcionarios (id, nome, salario, departamento) values (4, 'Ana', 6300, 'gerente');
-insert into funcionarios (nome, salario, departamento) values ('Douglas', 1400, 'estagiario');
+INSERT INTO FUNCIONARIOS (ID, NOME, SALARIO, DEPARTAMENTO) VALUES (1, 'FERNANDO', 1400, 'TI');
+INSERT INTO FUNCIONARIOS (ID, NOME, SALARIO, DEPARTAMENTO) VALUES (2, 'GUILHERME', 2500, 'ANALISTA JUNIOR');
+INSERT INTO FUNCIONARIOS (NOME, SALARIO, DEPARTAMENTO) VALUES ('FABIO', 3700, 'ANALISTA PLENO');
+INSERT INTO FUNCIONARIOS (ID, NOME, SALARIO, DEPARTAMENTO) VALUES (4, 'ANA', 6300, 'GERENTE');
+INSERT INTO FUNCIONARIOS (NOME, SALARIO, DEPARTAMENTO) VALUES ('DOUGLAS', 1400, 'ESTAGIARIO');
 
-select * from funcionarios;
-select * from funcionarios where salario > 2000;
-select * from funcionarios where id = 2;
+SELECT * FROM FUNCIONARIOS;
+SELECT * FROM FUNCIONARIOS WHERE SALARIO > 2000;
+SELECT * FROM FUNCIONARIOS WHERE ID = 2;
 
-update funcionarios set salario = salario * 1.1 where id = 1;
+UPDATE FUNCIONARIOS SET SALARIO = SALARIO * 1.1 WHERE ID = 1;
 
-update funcionarios set departamento = 'estagiario' where id = 1;
+UPDATE FUNCIONARIOS SET DEPARTAMENTO = 'ESTAGIARIO' WHERE ID = 1;
 
-set sql_safe_updates = 0;
-/* set sql_safe_updates = 1; */
-update funcionarios set salario = salario * 1.1;
+SET SQL_SAFE_UPDATES = 0;
+/* SET SQL_SAFE_UPDATES = 1; */
+UPDATE FUNCIONARIOS SET SALARIO = SALARIO * 1.1;
 
-update funcionarios set salario = round(salario * 1.1, 2);
+UPDATE FUNCIONARIOS SET SALARIO = ROUND(SALARIO * 1.1, 2);
 
-delete from funcionarios where id = 4;
+DELETE FROM FUNCIONARIOS WHERE ID = 4;
 
-insert into veiculos (funcionario_id, veiculo, placa) values (1, 'carro', 'SB-0001');
-insert into veiculos (funcionario_id, veiculo, placa) values (1, 'carro', 'SB-0002');
+INSERT INTO VEICULOS (FUNCIONARIO_ID, VEICULO, PLACA) VALUES (1, 'CARRO', 'SB-0001');
+INSERT INTO VEICULOS (FUNCIONARIO_ID, VEICULO, PLACA) VALUES (1, 'CARRO', 'SB-0002');
 
-select * from veiculos;
+SELECT * FROM VEICULOS;
 
-update veiculos set funcionario_id = 5 where id = 2;
+UPDATE VEICULOS SET FUNCIONARIO_ID = 5 WHERE ID = 2;
+UPDATE VEICULOS SET VEICULO = 'CAMINHAO' WHERE ID = 2;
 
-insert into salarios (faixa, inicio, fim) values ('estagiario', 1000, 2000);
-insert into salarios (faixa, inicio, fim) values ('analista junior', 2500, 3500);
-insert into salarios (faixa, inicio, fim) values ('analista pleno', 4000, 5000);
+INSERT INTO SALARIOS (FAIXA, INICIO, FIM) VALUES ('ESTAGIARIO', 1000, 2000);
+INSERT INTO SALARIOS (FAIXA, INICIO, FIM) VALUES ('ANALISTA JUNIOR', 2500, 3500);
+INSERT INTO SALARIOS (FAIXA, INICIO, FIM) VALUES ('ANALISTA PLENO', 4000, 5000);
+INSERT INTO SALARIOS (FAIXA, INICIO, FIM) VALUES ('ANALISTA PLENO', 4000, 5000);
 
-select * from salarios;
-select * from funcionarios f where salario > 3000;
-select nome, salario from funcionarios f where f.salario > 3000;
-select nome AS 'funcionario', salario from funcionarios f where f.salario > 3000;
+SELECT * FROM SALARIOS;
+SELECT * FROM FUNCIONARIOS F WHERE SALARIO > 3000;
+SELECT NOME, SALARIO FROM FUNCIONARIOS F WHERE F.SALARIO > 3000;
+SELECT NOME AS 'FUNCIONARIO', SALARIO FROM FUNCIONARIOS F WHERE F.SALARIO > 3000;
 
-select * from funcionarios where nome = 'Guilherme'
-union
-select * from funcionarios where id = 5;
+SELECT * FROM FUNCIONARIOS WHERE NOME = 'GUILHERME'
+UNION
+SELECT * FROM FUNCIONARIOS WHERE ID = 5;
 
-select * from funcionarios where nome = 'Guilherme'
-union all
-select * from funcionarios where nome = 'Guilherme';
+SELECT * FROM FUNCIONARIOS WHERE NOME = 'GUILHERME'
+UNION ALL
+SELECT * FROM FUNCIONARIOS WHERE NOME = 'GUILHERME';
