@@ -1,0 +1,14 @@
+HTTP: HyperText Transfer Protocol
+
+HTTP > Protocolo (conjunto de regras) de segurança
+
+HTTPS > mesmo protocolo com uma camada a mais de segurança (SSL/TLS)
+
+DNS (Domain name system) > transforma dominio em numero IP para atender a requisição do site
+
+Porta padrão do HTTP é a 80, ela não precisa ser especificada no dominio
+
+Porta padrão do HTTPS é a 443, ela não precisa ser especificada no dominio
+
+Uma URL é uma URI. No contexto do desenvolvimento web, ambas as siglas são válidas para falar de endereços na web.
+As siglas são praticamente sinônimos e são utilizadas dessa forma.
