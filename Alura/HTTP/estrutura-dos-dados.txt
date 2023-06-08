@@ -1,0 +1,8 @@
+Podemos confirmar qual a estrutura analisando os cabeçalhos do HTTP. Para isso, clicamos na seta apontando para baixo "∨" ao lado do "Body", vamos ter quatro opções:
+
+Body;
+cookies;
+headers;
+test results.
+
+Selecionamos "headers", e temos os cabeçalhos das respostas. Um desses cabeçalhos é chamado de Content-Type (em português, "tipo do conteúdo"), e analisando o valor dele temos application/json;charset=utf-8. Isso nos informa que é um JSON. A parte charset=utf-8 é para informar que esse JSON irá suportar caracteres com acentos, mas o importante é a parte que informa application/json.

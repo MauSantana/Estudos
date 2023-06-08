@@ -12,3 +12,16 @@ Porta padrão do HTTPS é a 443, ela não precisa ser especificada no dominio
 
 Uma URL é uma URI. No contexto do desenvolvimento web, ambas as siglas são válidas para falar de endereços na web.
 As siglas são praticamente sinônimos e são utilizadas dessa forma.
+
+A criptografia simétrica é muito mais rápida. (é como abrir e fechar uma porta com a msm chave)
+o HTTPS usa ambos os métodos de criptografia, assimétrica e simétrica.
+HTTPS começa com criptografia assimétrica para depois mudar para criptografia simétrica
+
+Wireshark: Ferramenta para verificar se o HTTP esta expondo dados sensíveis
+
+Com a multiplexação(DO HTTP/2), é possível enviar e receber mensagens ao mesmo tempo na mesma conexão TCP.
+
+O HTTP é um protocolo que segue o modelo request-response;
+Ele funciona na camada de aplicação;
+As mensagens são divididas em cabeçalho e corpo;
+Temos métodos nas requisições, e status codes nas respostas.

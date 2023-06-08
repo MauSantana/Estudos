@@ -1,0 +1,19 @@
+Para gerar o certificado digital, usamos o seguinte comando:
+
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out server.crtCOPIAR CÓDIGO
+Não esqueça que o comando deve ser executado na mesma pasta do seu backend.
+
+Já para habilitar o HTTPS, vamos modificar o arquivo server.js.
+
+No topo do arquivo, adicionamos:
+
+const https = require("https")COPIAR CÓDIGO
+Depois, modificamos a linha que inicia o servidor:
+
+https.createServer({
+  key: fs.readFileSync('server.key'),
+  cert: fs.readFileSync('server.crt')
+}, server).listen(8000, () => {
+   console.log("API disponível em https://localhost:8000")
+})COPIAR CÓDIGO
+Agora, quando você executar o backend, ele estará com o HTTPS ativado.

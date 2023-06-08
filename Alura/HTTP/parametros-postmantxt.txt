@@ -1,0 +1,10 @@
+PARAMETROS GET
+
+Para passarmos esses parâmetros pela URL, usamos o sinal de interrogação passando o nome da variável que desejamos filtrar e o valor.
+
+EX: http://localhost:8000/livros?categoria=3
+
+-------------------------------------------------------------------------------------------------
+PARAMETROS POST 
+
+selecionamos a aba "body" abaixo da URL que estamos e no mesmo nível da aba na caixa de escolher colocamos a opção "raw" (mensagem escrita de forma crua) e em "text" colocamos JSON. Na sequência, colamos o JSON no corpo no campo em branco.

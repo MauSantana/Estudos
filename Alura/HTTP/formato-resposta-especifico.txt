@@ -1,0 +1,9 @@
+De que forma podemos especificar o formato que esperamos que seja devolvido?
+
+Pelo cabeçalho Accept.
+
+Através dele podemos usar algum formato específico como:
+Accept: text/html, Accept: text/css, Accept: application/xml, Accept: application/json, Accept:image/jpeg e Accept: image/*
+
+Ou até mesmo não definir nenhum formato específico colocando:
+Accept: */*
