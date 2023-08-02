@@ -1,0 +1,4 @@
+DOM é a sigla de Document Object Model
+
+O DOM é uma interface de linguagem neutra que permite que o documento HTML seja atualizado dinamicamente.
+-------------------------------------------------------------
